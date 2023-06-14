@@ -1,0 +1,86 @@
+.footer_list {
+    margin-top: -4.6rem;
+}
+
+.copyright-text-2 {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 990px) {
+    .item-1.ml-12 {
+        @apply ml-0
+    }
+    .copyright-text.flex {
+        @apply flex-none
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .logo {
+        @apply hidden
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .footer_list.ml-56 {
+        @apply ml-12
+    }
+
+    .copyright.flex {
+        @apply flex-row-reverse
+    }
+
+    .copyright-text.flex, .copyright-text-2.justify-end {
+        @apply gap-7
+    }
+    .copyright-text.flex {
+        @apply justify-between
+    }
+    .copyright-text-2.justify-end {
+        @apply justify-start
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer.px-6 {
+        @apply px-3
+    } 
+    .footer__links.mt-48 {
+        @apply mt-36
+    }
+    .footer_list.ml-56 {
+        @apply ml-0
+    }
+
+    .items-container.flex, .item-1.flex, .copyright-text.flex {
+        @apply flex-col
+    }
+
+    .items-container.flex, .copyright.flex, .copyright-text-2.justify-end {
+        @apply justify-center
+    }
+
+    .item-1.flex, .copyright.flex {
+        @apply text-center
+    }
+
+    .items-container.flex {
+        @apply items-center
+    }
+
+    .footer_list{
+        @apply mt-0 
+    }
+
+    .item-2 {
+        @apply  mt-16
+    }
+
+    .copyright.flex {
+        @apply flex-col-reverse gap-y-12
+    }
+
+    article.text-xl, .copyright-text-2 {
+        font-size: 16px;
+    }
+}

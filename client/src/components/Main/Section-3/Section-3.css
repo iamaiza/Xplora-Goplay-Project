@@ -1,0 +1,56 @@
+.animals-img {
+    width: 42%;
+}
+
+.flex-container {
+    height: 60vh;
+
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .animals-img {
+        width: 50%;
+        margin-left: 1rem;
+    }
+    .text-m.mr-36 {
+        @apply mr-0
+    }
+
+    .learn-section.px-16 {
+        @apply px-10
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .learn-section.pt-5 {
+        @apply pt-12
+    }
+    .flex-container.flex {
+        flex-direction: column;
+        height: 100%;
+    }
+    .text-m.mr-36 {
+        @apply mr-0
+    }
+    .btn {
+        @apply hidden
+    }
+    .btn-hidden.hidden {
+        @apply block
+    }
+    .animals-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .learn-section.px-16 {
+        @apply px-5
+    }
+    .learn-section p, .btn-hidden button {
+        font-size: 16px;
+    }
+    .btn-hidden button.px-16 {
+        @apply px-8
+    }
+}

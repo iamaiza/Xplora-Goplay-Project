@@ -1,0 +1,33 @@
+@media screen and (max-width: 960px) {
+    .marketplace-section {
+        @apply px-5
+    }
+    .marketplace-section h1.text-6xl,
+    .marketplace-section h2.text-6xl {
+        @apply mx-0
+    }
+    .marketplace-section p {
+        @apply mx-0
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .marketplace-section h1.text-6xl,
+    .marketplace-section h2.text-6xl {
+        @apply text-[30px]
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .marketplace-section h1.text-6xl,
+    .marketplace-section h2.text-6xl {
+        @apply text-[26px]
+    }
+    .marketplace-section p {
+        font-size: 17px;
+    }
+    .marketplace-section figure.mt-24 {
+        @apply mt-16
+    }
+
+}

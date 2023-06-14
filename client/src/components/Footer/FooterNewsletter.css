@@ -1,0 +1,71 @@
+.form {
+    width: 33rem;
+}
+
+.newsletter-text {
+    width: 25rem;
+}
+
+.submit-btn {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+}
+
+.submit-btn:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.disable-btn {
+    background-color: #263238;
+    color: #000;
+}
+@media screen and (max-width: 1400px) {
+    .form.ml-44 {
+        @apply ml-0
+    }
+    .newsletter-section.mx-44 {
+        @apply gap-2
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1400px) {
+    .newsletter-section.mx-44 {
+        @apply mx-20
+    }
+}
+
+@media screen and (min-width:450px) and (max-width: 960px) {
+    .newsletter-section.mx-44 {
+        @apply mx-12
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .newsletter-text {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter-section.flex {
+        flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .newsletter-section h1 {
+        font-size: 30px;
+    }
+} 
+
+@media screen and (max-width: 450px) {
+    .newsletter-section.mx-44 {
+        @apply mx-7
+    }
+
+    .newsletter-text.text-xl {
+        font-size: 17px;
+    }
+}

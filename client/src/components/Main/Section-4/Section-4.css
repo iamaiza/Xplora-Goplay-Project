@@ -1,0 +1,29 @@
+
+@media screen and (min-width: 980px) and (max-width: 1250px) {
+    .join-premium-section.px-20 {
+        @apply px-5
+    } 
+}
+
+@media screen and (max-width: 960px) {
+    .join-premium-section.px-20 {
+        @apply px-2 pt-8
+    }
+    
+    .join-premium-section p {
+        font-size: 17px;
+        margin: 1.2rem 0;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+    .premium-text.text-6xl {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .premium-text.text-6xl {
+        font-size: 25px;
+    }
+}
