@@ -49,7 +49,7 @@
     }
 
     .banner-content.-mt-36 {
-        @apply -mt-0
+        @apply mt-0
     }
     .banner-content h1.text-6xl {
         font-size: 30px;
@@ -79,7 +79,7 @@
         height: 130vh;
     }
     .banner-content.-mt-36 {
-        @apply mt-24
+        @apply mt-20
     }
     .banner-content h1.text-6xl {
         font-size: 25px;
