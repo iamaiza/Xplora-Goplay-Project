@@ -18,10 +18,10 @@ const Banner = () => {
                         than others each day. It's made for kids and loved
                         by parents!
                     </p>
-                    <p className="text-4xl my-9 text-margin text-font">
+                    <p className="text-4xl my-9 text-margin text-font text-move">
                         Move. Learn. Play.
                     </p>
-                    <button className="bg-[#5AB55E] text-xl border-[#5AB55E] py-4 px-12 rounded-full btn-shadow cursor-pointer">
+                    <button className="bg-[#5AB55E] text-base sm:text-xl border-[#5AB55E] py-2.5 sm:py-4 px-12 rounded-full btn-shadow cursor-pointer">
                         Let's Go
                     </button>
                 </div>
