@@ -31,10 +31,10 @@
 
 @media screen and (max-width: 640px) {
     .motion-section.px-5 {
-        @apply px-0 pt-32
+        @apply px-0 pt-24
     }
     .grid-section.px-5 {
-        @apply px-3 text-center
+        @apply px-4 text-center
     }
     .box.w-64 {
         margin-left: -2rem;
@@ -45,7 +45,6 @@
     .box p {
         margin-top: 0;
     }
-
     .grid-item-2 h2 {
         font-size: 30px;
     }
@@ -56,9 +55,8 @@
 
 @media screen and (min-width: 385px) and (max-width: 640px) {
     .box.w-52 {
-        width: 11rem;
+        width: 12rem;
     }
-
     .box.w-64 {
         width: 12rem;
         height: 8rem;
@@ -77,10 +75,10 @@
         @apply flex flex-col justify-center items-center
     }
     .box.w-52 {
-        width: 8rem;
+        width: 8.5rem;
     }
     .box.w-64 {
-        width: 9rem;
+        width: 9.5rem;
         height: 7rem;
     }
     .box h2 {
