@@ -58,6 +58,6 @@
     }
 
     .flex-img {
-        @apply w-[15rem]
+        @apply w-[15rem] -mr-8
     }
 }
