@@ -1,6 +1,6 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
-import { LandingPage } from "./index"
+import { LandingPage, Login } from "./index"
 
 function App() {
 
@@ -8,6 +8,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   )
