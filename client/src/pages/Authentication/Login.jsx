@@ -29,7 +29,7 @@ const Login = () => {
                 <h1 className="text-3xl mb-3">Stay Active.</h1>
                 <h1 className="text-3xl">Play to move the world.</h1>
               </div>
-              <div className="mt-32 -ml-14 flex-img-container">
+              <div className="mt-32 -ml-12 flex-img-container">
                 <figure className="flex-img">
                   <img className="w-full h-full object-cover" src="https://goplay.myxplora.com/_nuxt/img/login-image.c5f08c4.png" alt="" />
                 </figure>
