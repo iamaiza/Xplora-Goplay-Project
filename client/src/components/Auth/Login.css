@@ -1,0 +1,35 @@
+.login-form {
+    width: 50rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .login-form {
+        @apply w-full
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .login-form.flex {
+        @apply flex-col gap-x-0 gap-y-7
+    }
+    .login-form input {
+        @apply w-full
+    }
+
+    .remember-me.mt-20, .form.mt-20 {
+        @apply mt-14
+    }
+    .main-form.pt-36 {
+        @apply pt-10
+    }
+}
+@media screen and (max-width:500px) {
+    .login-form-container.mx-10 {
+        @apply mx-3
+    }
+
+    .login-form-container span {
+        @apply px-3 py-3 text-base
+    }
+
+}

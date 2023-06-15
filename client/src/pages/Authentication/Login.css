@@ -1,0 +1,63 @@
+.left-side-items, .login-btn {
+    background: linear-gradient(90deg,#754bef,#754bef 36%,#5675f4);
+}
+    
+.left-side-items {
+    width: 65rem;
+}
+
+.text-color {
+    color: rgba(0,0,0,.54);
+}
+
+.active {
+    @apply bg-[#e5310e] text-white
+}
+
+@media screen and (max-width: 1400px) {
+    .left-side-items {
+        width: 65%;
+    }
+    .login-container.gap-x-7 {
+        @apply gap-x-0
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1400px) {
+    .stay-active.ml-16 {
+        @apply ml-5
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-container.flex {
+        @apply block 
+    }
+    .left-item-flex.flex {
+        @apply flex-col-reverse
+    }
+
+    .left-side-items, .flex-img-container {
+        @apply w-full
+    }
+
+    .stay-active.ml-16 {
+        @apply ml-0 mt-0
+    }
+
+    .flex-img-container {
+        @apply flex justify-end
+    }
+
+    .flex-img-container.mt-40 {
+        @apply mt-24
+    }
+
+    .flex-img-container.-ml-14 {
+        @apply ml-0
+    }
+
+    .flex-img {
+        @apply w-[15rem]
+    }
+}
