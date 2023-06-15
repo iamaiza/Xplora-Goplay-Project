@@ -41,12 +41,12 @@ const SignUp = () => {
                     </figure>
 
                     <div className="w-fit mx-auto flex gap-x-10 mt-12">
-                        <figure>
+                        <Link to="https://apps.apple.com/gb/app/xplora/id1521983878">
                             <img src="https://goplay.myxplora.com/_nuxt/img/get-on-app-store.be4d804.png" alt="" />
-                        </figure>
-                        <figure>
+                        </Link>
+                        <Link to="https://play.google.com/store/apps/details?id=com.xplora.xplorao2o&hl=en_GB&gl=US">
                             <img src="https://goplay.myxplora.com/_nuxt/img/get-on-google-play.9048527.png" alt="" />
-                        </figure>
+                        </Link>
                     </div>
                 </div>
             </div>
