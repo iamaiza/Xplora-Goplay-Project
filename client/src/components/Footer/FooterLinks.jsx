@@ -5,6 +5,7 @@ import {
     InstagramIcon,
     YoutubeIcon,
 } from "../../icons/FooterIcons";
+import { Link } from "react-router-dom"
 
 const FooterLinks = () => {
     return (
@@ -30,15 +31,15 @@ const FooterLinks = () => {
             </div>
           </div>
           <div className="item-2 flex gap-4">
-            <div className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
+            <Link to="https://www.youtube.com/channel/UCsIfl3PccNIWXwgtyr6NHrA/featured" target="_blank" className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
               <YoutubeIcon />
-            </div>
-            <div className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
+            </Link>
+            <Link to="https://www.instagram.com/xplora_uk/" target="_blank" className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
               <InstagramIcon />
-            </div>
-            <div className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
+            </Link>
+            <Link to="https://www.facebook.com/myxplorauk" target="_blank" className="bg-[#E5310E] w-14 h-14 flex justify-center items-center rounded-full">
               <FacebookIcon />
-            </div>
+            </Link>
           </div>
         </div>
 

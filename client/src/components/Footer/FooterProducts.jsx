@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterProducts.css"
+import { Link } from "react-router-dom";
 
 const FooterProducts = () => {
     return (
@@ -11,21 +12,21 @@ const FooterProducts = () => {
                         Use smart watches (Apple, fitbit or similar) or simply
                         use your smartphone to join.
                     </p>
-                    <div className="flex justify-around gap-5 mb-12">
-                        <figure className="app-link">
+                    <div className="flex justify-around gap-7 mb-12 px-7 footer-app-container">
+                        <Link to="https://apps.apple.com/gb/app/xplora/id1521983878" target="_blank" className="app-link">
                             <img
                                 className="w-full object-cover"
                                 src="https://goplay.myxplora.com/_nuxt/img/get-on-app-store.be4d804.png"
                                 alt=""
                             />
-                        </figure>
-                        <figure className="app-link">
+                        </Link>
+                        <Link to="https://play.google.com/store/apps/details?id=com.xplora.xplorao2o&hl=en_GB&gl=US" target="_blank" className="app-link">
                             <img
                                 className="w-full object-cover"
                                 src="https://goplay.myxplora.com/_nuxt/img/get-on-google-play.9048527.png"
                                 alt=""
                             />
-                        </figure>
+                        </Link>
                     </div>
                     <figure className="">
                         <img
