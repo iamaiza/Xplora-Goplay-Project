@@ -23,13 +23,13 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1400px) {
+@media screen and (min-width: 767px) and (max-width: 1400px) {
     .stay-active.ml-16 {
         @apply ml-5
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .login-container.flex {
         @apply block 
     }
