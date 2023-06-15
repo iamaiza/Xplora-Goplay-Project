@@ -49,15 +49,11 @@
         @apply flex justify-end
     }
 
-    .flex-img-container.mt-40 {
-        @apply mt-24
-    }
-
     .flex-img-container.-ml-14 {
         @apply ml-0
     }
 
     .flex-img {
-        @apply w-[15rem] -mr-8
+        @apply w-[15rem] -mr-24
     }
 }
