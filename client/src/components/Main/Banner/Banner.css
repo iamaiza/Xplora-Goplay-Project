@@ -22,11 +22,14 @@
 }
 
 @media screen and (min-width: 1180px) and (max-width: 1480px) {
-    .banner-section, .banner-img {
+    /* .banner-section, .banner-img {
         height: 80vh;
-    }
+    } */
     .banner-content.-mt-36 {
         @apply mt-0
+    }
+    .banner-content h1.text-6xl {
+        @apply text-5xl
     }
 }
 
@@ -74,12 +77,21 @@
     }
 } */
 
-@media screen and (max-width: 550px) {
-    .banner-content, .banner-img {
+@media screen and (min-width: 500px) and (max-width:590px) {
+        .banner-content, .banner-img {
+        height: 145vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+        .banner-content,.banner-img {
         height: 100vh;
     }
+}
+@media screen and (max-width: 550px) {
+
     .banner-content.-mt-36 {
-        @apply mt-20
+        @apply mt-24
     }
     .banner-content h1.text-6xl {
         font-size: 25px;
