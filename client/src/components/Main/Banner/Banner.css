@@ -85,7 +85,7 @@
 
 @media screen and (max-width: 500px) {
         .banner-content,.banner-img {
-        height: 100vh;
+        height: 105vh;
     }
 }
 @media screen and (max-width: 550px) {
