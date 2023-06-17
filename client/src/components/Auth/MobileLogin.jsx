@@ -18,7 +18,7 @@ const MobileLogin = ({ isVisible }) => {
         <div className="border flex-1 text-xl rounded-3xl w-full py-3 min-[1025px]:py-5 px-4">
           <IntlTelInput
             containerClassName="intl-tel-input"
-            inputClassName="focus:outline-none max-[1450px]:w-full"
+            inputClassName="focus:outline-none w-full"
             onSelectFlag={(countryCode) => setSelectedCountry(countryCode)}
             onPhoneNumberChange={(value) => setPhoneNumber(value)}
             placeholder="Phone Number"
@@ -29,7 +29,7 @@ const MobileLogin = ({ isVisible }) => {
           <input
             type="password"
             placeholder="Password"
-            className="focus:outline-0 max-[1450px]:w-full"
+            className="focus:outline-0 w-full"
           />
         </div>
       </div>
