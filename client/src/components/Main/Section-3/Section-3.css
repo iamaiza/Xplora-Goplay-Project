@@ -42,7 +42,4 @@
     .learn-section p, .btn-hidden button {
         font-size: 16px;
     }
-    .btn-hidden button.px-16 {
-        @apply px-8
-    }
 }
