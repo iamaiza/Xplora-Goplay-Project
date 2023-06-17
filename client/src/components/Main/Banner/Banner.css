@@ -37,7 +37,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .banner-img {
         background-image: url("https://goplay.myxplora.com/_nuxt/img/banner-bg-mobile.e45f846.webp");
     }
