@@ -4,7 +4,7 @@ import "./Section-3.css"
 const Section3 = () => {
   return (
     <section className='bg-[#6165F3] px-16 pt-5 pb-4 learn-section'>
-        <div className='flex-container flex justify-between items-center'>
+        <div className='flex-container h-[60vh] flex justify-between items-center max-[1200px]:h-full'>
             <div className='flex-1'>
                 <figure className='max-w-xs w-full'>
                     <img className='w-full object-cover' src="https://goplay.myxplora.com/_nuxt/img/golearn-color-logo.764d0f6.png" alt="" />

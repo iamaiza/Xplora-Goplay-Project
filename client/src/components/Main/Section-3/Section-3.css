@@ -2,16 +2,6 @@
     width: 42%;
 }
 
-.flex-container {
-    height: 60vh;
-
-}
-
-@media screen and (max-width: 1200px) {
-    .flex-container {
-        height: 100%;
-    }
-}
 
 @media screen and (min-width: 980px) and (max-width: 1200px) {
     .animals-img {
