@@ -2,10 +2,6 @@
     width: 160px;
 }
 
-.watch-img {
-    width: 100%;
-}
-
 @media screen and (max-width: 768px) {
     .w-div {
         width: 120px;
@@ -40,11 +36,5 @@
     }
     .premium-section h1 {
         font-size: 27px;
-    }
-}
-
-@media screen and (min-width: 850px) and (max-width: 1275px) {
-    .watch-img {
-        width: 70%;
     }
 }

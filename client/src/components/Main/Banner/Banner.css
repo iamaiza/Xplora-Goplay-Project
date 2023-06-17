@@ -17,65 +17,12 @@
     background-repeat: no-repeat;
 }
 
-.banner-content h1 {
-    width: 56%;
-}
 
-@media screen and (min-width: 1180px) and (max-width: 1480px) {
-    /* .banner-section, .banner-img {
-        height: 80vh;
-    } */
-    .banner-content.-mt-36 {
-        @apply mt-0
-    }
-    .banner-content h1.text-6xl {
-        @apply text-5xl
-    }
-}
-
-@media screen and (min-width: 970px) and (max-width: 1179px) {
-    /* .banner-section, .banner-img {
-        height: 65vh;
-    }    */
-    .banner-content.-mt-36 {
-        @apply -mt-5
-    }
-    
-    .banner-content h1.text-6xl {
-        font-size: 35px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 970px) {
+@media screen and (min-width: 768px) and (max-width: 1179px) and (min-height: 800px) and (max-height: 1401px) {
     .banner-section, .banner-img {
         height: 45vh;
     }
-
-    .banner-content.-mt-36 {
-        @apply mt-0
-    }
-    .banner-content h1.text-6xl {
-        font-size: 30px;
-    }
-    .banner-content p {
-        font-size: 16px;
-    }
-    .banner-content.pl-20 {
-        @apply pl-7
-    }
 }
-
-/* @media screen and (min-width: 550px) and (max-width: 767px) {
-    .banner-section, .banner-img {
-        height: 170vh;
-    }
-    .banner-content.-mt-36 {
-        @apply -mt-[55rem]
-    }
-    .banner-content h1.text-6xl {
-        font-size: 35px;
-    }
-} */
 
 @media screen and (min-width: 500px) and (max-width:590px) {
         .banner-content, .banner-img {
@@ -88,37 +35,11 @@
         height: 105vh;
     }
 }
-@media screen and (max-width: 550px) {
 
-    .banner-content.-mt-36 {
-        @apply mt-24
-    }
-    .banner-content h1.text-6xl {
-        font-size: 25px;
-    }
-    .banner-content p {
-        font-size: 16px;
-        margin: 1rem 0;
-    }
-    p.text-move {
-        font-size: 21px;
-        /* margin-top: -1rem; */
-    }
-}
 
 @media screen and (max-width: 767px) {
-    .banner-section.mt-24 {
-        @apply mt-16
-    }
     .banner-img {
         background-image: url("https://goplay.myxplora.com/_nuxt/img/banner-bg-mobile.e45f846.webp");
     }
 
-    .banner-content h1.text-6xl, .banner-content p {
-        width: 100%;
-    }
-
-    .banner-content.pl-20 {
-        @apply p-5 text-center
-    }
 }

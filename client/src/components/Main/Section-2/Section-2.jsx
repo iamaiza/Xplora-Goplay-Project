@@ -53,7 +53,7 @@ const Section2 = () => {
                             <h2 className="text-[3.2rem] leading-none font-bold text-[#f9a825]">Get the most out of</h2>
                             <h2 className="m-heading text-[3.2rem] leading-none font-bold mt-5">your Xplora watch!</h2>
                         </div>
-                        <figure className="watch-img h-full">
+                        <figure className="watch-img h-full w-full max-[1275px]:w-[70%] max-[850px]:w-full">
                             <img className="w-full h-full object-cover" src="https://goplay.myxplora.com/_nuxt/img/get-the-most.0de3279.webp" alt="" />
                         </figure>
                     </div>

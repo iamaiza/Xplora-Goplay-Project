@@ -7,12 +7,12 @@ const FooterProducts = () => {
         <>
             <div className="footer-products flex justify-between gap-5 mx-9 text-center">
                 <div className="flex-item-1">
-                    <h1 className="text-6xl">Xplora App</h1>
+                    <h1 className="text-6xl max-[960px]:text-[35px] max-[600px]:text-[27px]">Xplora App</h1>
                     <p className="text-xl mt-8 mb-24 w-[40rem] mx-auto leading-normal">
                         Use smart watches (Apple, fitbit or similar) or simply
                         use your smartphone to join.
                     </p>
-                    <div className="flex justify-around gap-7 mb-12 px-7 footer-app-container">
+                    <div className="flex justify-around gap-7 mb-12 px-7 max-[1400px]:px-0">
                         <Link to="https://apps.apple.com/gb/app/xplora/id1521983878" target="_blank" className="app-link">
                             <img
                                 className="w-full object-cover"
@@ -36,14 +36,14 @@ const FooterProducts = () => {
                         />
                     </figure>
                 </div>
-                <div className="card-container">
-                    <h1 className="text-6xl">Xplora Products</h1>
+                <div className="w-[42rem] max-[1400px]:w-full">
+                    <h1 className="text-6xl max-[960px]:text-[35px] max-[600px]:text-[27px]">Xplora Products</h1>
                     <p className="text-xl mt-8 mb-32 w-[40rem] mx-auto leading-normal">
                         Our products are the most awarded, trusted and
                         recognised in the market today.
                     </p>
                     <div className="card w-full rounded-3xl px-5 pb-5">
-                        <figure className="w-[60%] mx-auto relative card-img">
+                        <figure className="w-[60%] mx-auto relative -top-[5.4rem] max-[600px]:-top-[3.5rem]">
                             <img
                                 className="w-full object-cover"
                                 src="https://goplay.myxplora.com/_nuxt/img/products.c4afdfe.webp"
