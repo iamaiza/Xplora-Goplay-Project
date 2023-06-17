@@ -23,12 +23,6 @@
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1400px) {
-    .stay-active.ml-16 {
-        @apply ml-5
-    }
-}
-
 @media screen and (max-width: 767px) {
     .login-container.flex {
         @apply block 
@@ -42,7 +36,7 @@
     }
 
     .stay-active.ml-16 {
-        @apply ml-0 mt-0
+        @apply  mt-0
     }
 
     .flex-img-container {

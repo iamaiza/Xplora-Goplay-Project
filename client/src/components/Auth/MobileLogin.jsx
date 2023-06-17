@@ -14,22 +14,22 @@ const MobileLogin = ({ isVisible }) => {
       }`}
       style={{ visibility: isVisible ? "visible" : "hidden" }}
     >
-      <div className="login-form flex gap-x-8">
-        <div className="border flex-1 text-xl rounded-3xl w-full py-3 min-(1025px):py-5 px-4">
+      <div className="login-form flex gap-x-8 w-[50rem] max-[1450px]:w-full">
+        <div className="border flex-1 text-xl rounded-3xl w-full py-3 min-[1025px]:py-5 px-4">
           <IntlTelInput
             containerClassName="intl-tel-input"
-            inputClassName="focus:outline-none"
+            inputClassName="focus:outline-none max-[1450px]:w-full"
             onSelectFlag={(countryCode) => setSelectedCountry(countryCode)}
             onPhoneNumberChange={(value) => setPhoneNumber(value)}
             placeholder="Phone Number"
           />
         </div>
 
-        <div className="border flex-1 text-xl rounded-3xl w-full py-3 min-(1025px):py-5 px-4">
+        <div className="border flex-1 text-xl rounded-3xl w-full py-3 min-[1025px]:py-5 px-4">
           <input
             type="password"
             placeholder="Password"
-            className="focus:outline-0"
+            className="focus:outline-0 max-[1450px]:w-full"
           />
         </div>
       </div>
