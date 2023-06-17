@@ -18,7 +18,7 @@ const Login = () => {
         <div className="main-form w-full h-full pt-32 overflow-x-hidden mb-5">
             <div className="mx-10 login-form-container">
                 <h2 className="text-xl leading-none min-[1025px]:text-2xl ml-5">Log in</h2>
-                <div className="span-container mt-10 py-2 h-10 min-[1025px]:h-[2.72rem] text-base min-[1025px]:text-xl bg-[#ffc6bb] w-fit rounded-full cursor-default">
+                <div className="span-container mt-10 py-2 h-10 min-[1025px]:h-[2.72rem] text-base min-[1025px]:text-xl bg-[#ffc6bb] w-fit rounded-full cursor-pointer">
                     <span
                         className={`h-full py-[0.7rem] px-7 rounded-full text-color ${
                             activeTab === "mobile" ? "active" : ""
