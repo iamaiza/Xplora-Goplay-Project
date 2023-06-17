@@ -1,27 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./SignUp.css";
+import Logo from "../../UI/Logo";
 
 const SignUp = () => {
     return (
         <div className="signup-page w-full">
             <div className="pb-24">
                 <div className="flex items-center justify-between py-5 px-2 sm:px-5">
-                    <div className="flex items-center justify-between gap-2 sm:gap-4">
-                        <Link
-                            to="/"
-                            className="w-10 h-10 sm:w-14 sm:h-14 rounded-sm overflow-hidden"
-                        >
-                            <img
-                                className="w-full h-full object-cover"
-                                src="https://goplay.myxplora.com/_nuxt/img/xplora-logo.98b33b7.png"
-                                alt=""
-                            />
-                        </Link>
-                        <h1 className="text-xl block sm:text-4xl text-white">
-                            Xplora
-                        </h1>
-                    </div>
+                    <Logo />
                     <div className="text-[0.9rem] sm:text-3xl text-end mt-1 sm:mt-0 text-white">
                         <span>Already a User?</span>
                         <Link
