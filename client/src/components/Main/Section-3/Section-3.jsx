@@ -18,7 +18,7 @@ const Section3 = () => {
             </figure>
         </div>
         <div className='text-center hidden btn-hidden'>
-          <button className='mt-10 bg-[#5AB55E] py-3 px-16 rounded-full text-lg text-white btn-shadow'>Let's Go Learn</button>
+          <button className='mt-10 bg-[#5AB55E] p-3 max-w-[15rem] w-full rounded-full text-lg text-white btn-shadow'>Let's Go Learn</button>
         </div>
 
     </section>
