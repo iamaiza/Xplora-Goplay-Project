@@ -21,9 +21,6 @@
     .learn-section.pt-5 {
         @apply pt-12
     }
-    .flex-container.flex {
-        flex-direction: column;
-    }
     .text-m.mr-36 {
         @apply mr-0
     }
