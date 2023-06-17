@@ -25,7 +25,7 @@ const Login = () => {
             </div>
           <div className="left-side-items px-5 py-6 overflow-hidden">
             <div className="left-item-flex flex flex-col gap-y-7">
-              <div className="text-white mt-28 ml-16 stay-active">
+              <div className="text-white mt-28 ml-16 stay-active max-[1400px]:ml-5 max-[767px]:ml-0">
                 <h1 className="text-3xl mb-3">Stay Active.</h1>
                 <h1 className="text-3xl">Play to move the world.</h1>
               </div>

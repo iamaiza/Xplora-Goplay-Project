@@ -1,13 +1,3 @@
-.login-form {
-    width: 50rem;
-}
-
-@media screen and (max-width: 1450px) {
-    .login-form, .login-form input {
-        @apply w-full
-    }
-}
-
 @media screen and (max-width: 980px) {
     .login-form.flex {
         @apply flex-col gap-x-0 gap-y-7
@@ -32,9 +22,6 @@
     .login-form-container span {
         @apply px-3 py-3 text-base
     }
-    /* .span-container.py-2 {
-        @apply py-1
-    } */
     .span-container.mt-10 {
         @apply mt-6
     }
