@@ -5,10 +5,10 @@ const EmailLogin = ({ isVisible }) => {
     return (
         <form className={`form mt-14 min-(1025px):mt-20 absolute top-0 w-full transition-all duration-300 ease-in-out ${isVisible ? "right-0" : "-right-full"}`} style={{ visibility: isVisible ? "visible" : "hidden" }}>
             <div className="login-form flex gap-x-8 w-[50rem] max-[1450px]:w-full">
-                <div className=" border text-xl rounded-3xl w-full py-3 min-[1025px]:py-5 px-4">
+                <div className=" border text-xl rounded-3xl w-full py-4 min-[1025px]:py-5 px-4">
                     <input type="text" placeholder="Email Address" className="w-full focus:outline-none" />
                 </div>
-                <div className="border text-xl rounded-3xl w-full py-3 min-[1025px]:py-5 px-4">
+                <div className="border text-xl rounded-3xl w-full py-4 min-[1025px]:py-5 px-4">
                     <input type="text" placeholder="Password" className="w-full focus:outline-none" />
                 </div>
             </div>
