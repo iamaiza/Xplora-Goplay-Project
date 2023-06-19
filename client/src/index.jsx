@@ -1,3 +1,5 @@
-export { default as LandingPage } from "./pages/LandingPage"
+export { default as LandingPage } from "./pages/MainPages/LandingPage"
 export { default as Login } from "./pages/Authentication/Login"
 export { default as SignUp } from "./pages/Authentication/SignUp"
+export { default as Welcome } from "./pages/MainPages/WelcomePage"
+export { default as Dashboard } from "./pages/Dashboard/Dashboard"
