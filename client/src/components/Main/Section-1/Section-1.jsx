@@ -4,43 +4,44 @@ import Adventures from "./Adventures";
 
 const Section1 = () => {
 
-    const smallBoxQueries = "max-[640px]:w-[12rem] max-[385px]:w-[8.5rem]"
-    const bigBoxQueries = "max-[640px]:w-[12rem] max-[640px]:h-[8rem] max-[385px]:w-[9.5rem] max-[385px]:h-[7rem]"
+    const sectionMargin = 'max-[1285px]:tw-mt-20 max-xl:tw-mt-10 max-lg:tw-mt-6 max-[500px]:tw-mt-5 max-[385px]:tw-mt-[5.5rem] max-[361px]:tw-mt-5 max-[639px]:tw-mt-[100%] max-[550px]:tw-mt-[23rem]'
+    const smallBoxQueries = "max-lg:tw-w-40 max-sm:tw-w-[11rem] max-sm:tw-h-24"
+    const bigBoxQueries = "max-lg:tw-w-48 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem]"
     return (
-        <section className="motion-section text-white pt-24 pb-12 px-5 max-[590px]:mt-72 max-[500px]:mt-0">
-            <div className="grid-section gap-x-7 px-5">
-                <div className="flex grid-item-1">
+        <section className={`tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-36 ${sectionMargin}`}>
+            <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-lg:tw-px-0 max-sm:tw-px-2 max-sm:tw-text-center">
+                <div className="tw-flex grid-item-1">
                     <div>
-                        <div className={`box w-52 h-32 p-5 rounded-3xl mb-4 ${smallBoxQueries}`}>
-                            <h2 className="text-4xl max-[640px]:text-[25px] max-[385px]:text-[17px]">745k+</h2>
-                            <p className="text-xl mt-3 max-[640px]:text-[16px] max-[385px]:text-[14px] max-[365px]:-mt-[0.3rem]">Registered users</p>
+                        <div className={`box tw-text-left tw-w-44 tw-p-5 tw-rounded-2xl tw-mb-4 ${smallBoxQueries}`}>
+                            <h2 className="tw-text-[1.7rem] max-lg:tw-text-2xl max-sm:tw-text-xl">745k+</h2>
+                            <p className="tw-text-base max-lg:tw-text-[0.95rem] tw-mt-1 max-sm:tw-text-sm  max-sm:tw-mt-0">Registered users</p>
                         </div>
-                        <div className={`box w-52 h-32 p-5 rounded-3xl ${smallBoxQueries}`}>
-                            <h2 className="text-3xl max-[640px]:text-[25px] max-[385px]:text-[17px]">100 billion</h2>
-                            <p className="text-xl mt-2 max-[640px]:text-[16px] max-[385px]:text-[14px] max-[365px]:-mt-[0.3rem]">Steps per month</p>
+                        <div className={`box tw-text-left tw-w-44 tw-p-5 tw-rounded-2xl ${smallBoxQueries}`}>
+                            <h2 className="tw-text-[1.7rem] max-lg:tw-text-2xl max-sm:tw-text-xl">100 billion</h2>
+                            <p className="tw-text-base tw-mt-1 max-sm:tw-text-sm max-sm:tw-mt-0">Steps per month</p>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center pt-2">
-                        <div className={`box w-64 h-44 rounded-3xl p-3 flex justify-center items-center flex-col z-10 -ml-1.5 ${bigBoxQueries}`}>
+                    <div className="tw-flex tw-flex-col tw-justify-center tw-items-center tw-pt-2">
+                        <div className={`box tw-text-left tw-w-52 tw-h-32 tw-rounded-2xl tw-p-3 tw-flex tw-justify-center tw-items-center -tw-ml-2 ${bigBoxQueries}`}>
                             <div>
-                                <h2 className="text-4xl max-[640px]:text-[25px] max-[385px]:text-[17px]">3.3 billion</h2>
-                                <p className="text-xl mt-2 max-[640px]:text-[16px] max-[385px]:text-[14px] max-[365px]:-mt-[0.3rem]">Steps per day</p>
+                                <h2 className="tw-text-3xl max-sm:tw-text-xl">3.3 billion</h2>
+                                <p className="tw-text-base tw-mt-1 max-sm:tw-text-sm max-sm:tw-mt-0">Steps per day</p>
                             </div>
 
                         </div>
-                            <small className="mt-3">
+                            <div className="tw-mt-3 tw-text-[0.65rem] max-lg:tw-text-[0.6rem]">
                                 *Average statistics as of September 2022.
-                            </small>
+                            </div>
                     </div>
                 </div>
-                <div className="w-full grid-item-2 px-16 max-[1150px]:p-0">
-                    <h2 className="text-5xl mb-7 ">Set your kids in motion</h2>
-                    <p className="text-xl">
+                <div className="tw-w-full grid-item-2 tw-px-12 max-xl:tw-px-0">
+                    <h2 className="tw-text-5xl max-lg:tw-text-3xl max-sm:tw-text-2xl tw-mb-7">Set your kids in motion</h2>
+                    <p className="tw-text-base">
                         Xplora rewards activity and inspires kids to get out of
                         the couch and jump into the real world - leading to a
                         more active and healthy everyday life!
                     </p>
-                    <p className="text-xl mt-5">
+                    <p className="tw-text-base tw-mt-5">
                         Each week, our users walk more than one billion steps.
                         That's the equivalent of walking around the world once!
                     </p>

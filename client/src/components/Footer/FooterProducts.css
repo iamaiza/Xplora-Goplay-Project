@@ -2,36 +2,14 @@
     background: linear-gradient(180deg,#002e55,#00294b 45%,#000911);;
 }
 
-.card {
+.watch-card {
     background: linear-gradient(180deg,#456784 26%,#173853);;
 }
 
-.flex-item-1 {
-    width: 45%;
-}
-
-@media screen and (max-width: 1400px) {
-    .footer-products.flex {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .footer-products p, .flex-item-1, .app-link {
-        width: 100%;
-    }
-}
-
-
 @media screen and (max-width: 600px) {
-    .footer-products p {
-        font-size: 17px;
-    }
 
     .footer-products h2 {
-        font-size: 25px;
         margin-top: -3rem;
     }
-    .footer-products.mx-9 {
-        @apply mx-4
-    }
+
 }

@@ -1,33 +1,45 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Banner.css";
 
 const Banner = () => {
-
-    const bannerContentQueries = "max-[600px]:p-5 max-[600px]:text-center max-[550px]:mt-24 max-[1480px]:mt-0 max-[1179px]:-mt-5 max-[970px]:mt-0 max-[970px]:pl-7"
-    const headingQueries = "max-[550px]:text-[25px] max-[600px]:w-full max-[1480px]:text-5xl max-[1179px]:text-[35px] max-[970px]:text-[30px]"
+    const bannerContentQueries =
+        "max-[1285px]:tw-top-36 max-xl:tw-top-10 max-lg:tw-pl-4 max-lg:tw-top-20 max-[900px]:tw-top-12 max-sm:tw-top-36 max-sm:tw-text-center max-sm:tw-pl-0 max-[500px]:tw-px-4";
+    const headingQueries =
+        "max-lg:tw-text-[1.7rem] max-sm:tw-text-[1.55rem] max-sm:tw-w-full";
     return (
-        <section className="banner-section mt-24 max-[767px]:mt-16">
-            <div className="banner-img w-full flex justify-center items-center">
-                <div className={`text-white w-full pl-20 banner-content -mt-20 ${bannerContentQueries}`}>
-                    <h1 className={`text-6xl w-[56%] ${headingQueries}`} style={{ lineHeight: '1.2' }}>
-                        Join the most exciting activity universe for kids
-                        today!
-                    </h1>
-                    <p className="text-xl my-4 text-margin max-[550px]:text-[16px] max-[550px]:my-4">
-                        Motivate and engage your kids!
-                    </p>
-                    <p className="text-xl w-[45%] max-[600px]:w-full max-[970px]:text-[16px] max-[550px]:my-4">
-                        On average Xplora-kids walk over 2500 more steps
-                        than others each day. It's made for kids and loved
-                        by parents!
-                    </p>
-                    <p className="text-4xl my-9 text-margin text-font text-move max-[550px]:text-[21px] max-[550px]:my-4">
-                        Move. Learn. Play.
-                    </p>
-                    <button className="bg-[#5AB55E] text-base sm:text-xl border-[#5AB55E] py-2.5 sm:py-4 px-12 rounded-full btn-shadow cursor-pointer">
-                        Let's Go
-                    </button>
-                </div>
+        <section className="banner-section tw-max-h-screen max-[500px]:tw-h-[97vh] max-[385px]:tw-h-full max-[361px]:tw-h-[94vh] tw-h-full tw-mt-[4.9rem] max-sm:tw-mt-0 tw-relative">
+            <img
+                className="tw-w-full tw-h-full tw-object-cover max-sm:tw-hidden"
+                src="https://goplay.myxplora.com/_nuxt/img/banner-bg.94b0586.webp"
+                alt=""
+            />
+            <img
+                className="tw-w-full tw-h-full tw-object-cover tw-hidden max-sm:tw-block"
+                src="https://goplay.myxplora.com/_nuxt/img/banner-bg-mobile.e45f846.webp"
+                alt=""
+            />
+            <div
+                className={`tw-text-white tw-w-full tw-pl-16 banner-content tw-absolute tw-top-40 ${bannerContentQueries}`}
+            >
+                <h1
+                    className={`tw-text-5xl tw-w-[56%] ${headingQueries}`}
+                    style={{ lineHeight: "1.2" }}
+                >
+                    Join the most exciting activity universe for kids today!
+                </h1>
+                <p className="tw-text-base tw-my-4 max-[550px]:tw-text-[16px] max-[550px]:tw-my-4">
+                    Motivate and engage your kids!
+                </p>
+                <p className="tw-text-base tw-w-[42%] max-md:tw-w-full max-[550px]:tw-my-4">
+                    On average Xplora-kids walk over 2500 more steps than others
+                    each day. It's made for kids and loved by parents!
+                </p>
+                <p className="tw-text-3xl tw-my-9 text-font max-lg:tw-text-xl max-lg:tw-mb-4 max-lg:tw-mt-8 max-[550px]:tw-my-4">
+                    Move. Learn. Play.
+                </p>
+                <button className="tw-bg-[#5AB55E] tw-text-base tw-border-[#5AB55E] tw-py-2.5 sm:tw-py-2.5 tw-px-9 tw-rounded-full btn-shadow tw-cursor-pointer">
+                    Let's Go!
+                </button>
             </div>
         </section>
     );
