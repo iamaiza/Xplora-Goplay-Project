@@ -13,14 +13,3 @@
     color: #000;
 }
 
-@media screen and (min-width: 960px) and (max-width: 1400px) {
-    .newsletter-section.mx-44 {
-        @apply mx-20
-    }
-}
-
-@media screen and (min-width:450px) and (max-width: 960px) {
-    .newsletter-section.mx-44 {
-        @apply mx-12
-    }
-}

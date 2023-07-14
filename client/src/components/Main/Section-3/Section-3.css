@@ -1,5 +1,5 @@
 .animals-img {
-    width: 42%;
+    width: 45%;
 }
 
 
@@ -8,27 +8,27 @@
         width: 50%;
         margin-left: 1rem;
     }
-    .text-m.mr-36 {
-        @apply mr-0
+    .text-m.tw-mr-36 {
+        @apply tw-mr-0
     }
 
-    .learn-section.px-16 {
-        @apply px-10
+    .learn-section.tw-px-16 {
+        @apply tw-px-10
     }
 }
 
 @media screen and (max-width: 980px) {
-    .learn-section.pt-5 {
-        @apply pt-12
+    .learn-section.tw-pt-5 {
+        @apply tw-pt-12
     }
-    .text-m.mr-36 {
-        @apply mr-0
+    .text-m.tw-mr-36 {
+        @apply tw-mr-0
     }
     .btn {
-        @apply hidden
+        @apply tw-hidden
     }
-    .btn-hidden.hidden {
-        @apply block
+    .btn-hidden.tw-hidden {
+        @apply tw-block
     }
     .animals-img {
         width: 100%;
@@ -36,8 +36,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .learn-section.px-16 {
-        @apply px-5
+    .learn-section.tw-px-16 {
+        @apply tw-px-5
     }
     .learn-section p, .btn-hidden button {
         font-size: 16px;
