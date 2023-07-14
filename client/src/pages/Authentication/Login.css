@@ -1,9 +1,5 @@
-.left-side-items, .login-btn {
-    background: linear-gradient(90deg,#754bef,#754bef 36%,#5675f4);
-}
-    
 .left-side-items {
-    width: 65rem;
+    background: linear-gradient(90deg,#754bef,#754bef 36%,#5675f4);
 }
 
 .text-color {
@@ -11,43 +7,10 @@
 }
 
 .active {
-    @apply bg-[#e5310e] text-white
+    @apply tw-bg-[#e5310e] tw-text-white
 }
-
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width:500px) {
     .left-side-items {
-        width: 65%;
+        padding-bottom: 1rem;
     }
-    .login-container.gap-x-7 {
-        @apply gap-x-0
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .login-container.flex {
-        @apply block 
-    }
-    .left-item-flex.flex {
-        @apply flex-col-reverse
-    }
-
-    .left-side-items, .flex-img-container {
-        @apply w-full
-    }
-
-    .stay-active.ml-16 {
-        @apply  mt-0
-    }
-
-    .flex-img-container {
-        @apply flex justify-end
-    }
-
-    .flex-img-container.-ml-14 {
-        @apply ml-0
-    }
-
-    .flex-img {
-        @apply w-[15rem] -mr-24
-    }
-}
+} */

@@ -15,12 +15,12 @@ const Login = () => {
     };
 
     return (
-        <div className="main-form w-full h-full pt-32 overflow-x-hidden mb-5">
-            <div className="mx-10 login-form-container">
-                <h2 className="text-xl leading-none min-[1025px]:text-2xl ml-5">Log in</h2>
-                <div className="span-container mt-10 py-2 h-10 min-[1025px]:h-[2.72rem] text-base min-[1025px]:text-xl bg-[#ffc6bb] w-fit rounded-full cursor-pointer">
+        <div className="tw-w-full max-sm:tw-h-[570px] tw-pt-[7.5rem] max-xl:tw-pt-24 max-lg:tw-pt-20 tw-overflow-x-hidden tw-mb-5 max-sm:tw-mb-0">
+            <div className="tw-mx-10 max-xl:tw-mx-6 max-lg:tw-mx-7 max-sm:tw-mx-10 login-form-container">
+                <h2 className="tw-text-lg tw-leading-none tw-ml-3">Log in</h2>
+                <div className="span-container tw-mt-10 tw-py-2 tw-h-[2.3rem] tw-text-sm tw-tracking-wider tw-bg-[#ffc6bb] tw-w-fit tw-rounded-full tw-cursor-pointer">
                     <span
-                        className={`h-full py-[0.7rem] px-7 rounded-full text-color ${
+                        className={`form tw-h-full tw-py-[0.7rem] tw-px-5 tw-rounded-full text-color ${
                             activeTab === "mobile" ? "active" : ""
                         }`}
                         onClick={handleMobileClick}
@@ -28,7 +28,7 @@ const Login = () => {
                         Mobile&nbsp;Number
                     </span>
                     <span
-                        className={`h-full py-[0.7rem] px-7 rounded-full text-color ${
+                        className={`tw-h-full tw-py-[0.7rem] tw-px-5 tw-rounded-full text-color ${
                             activeTab === "email" ? "active" : ""
                         }`}
                         onClick={handleEmailClick}
@@ -36,7 +36,7 @@ const Login = () => {
                         Email&nbsp;Address
                     </span>
                 </div>
-                <div className="flex relative">
+                <div className="tw-flex  tw-relative">
                     <MobileLogin isVisible={activeTab === "mobile"} />
                     <EmailLogin isVisible={activeTab === "email"} />
                 </div>
