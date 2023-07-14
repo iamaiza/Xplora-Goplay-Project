@@ -1,0 +1,27 @@
+.card-shadow {
+    box-shadow: 2.3px 12.8px 54px 0 rgba(105,95,151,.23);
+}
+
+.grid-cols {
+    grid-template-columns: 2fr 1fr;
+}
+
+/* @media screen and (min-width: 1279px) and (max-width: 1395px) {
+    .d-sidebar {
+        max-width: 20rem;
+    }
+
+    .d-sidebar a.tw-text-xl {
+        @apply tw-text-lg
+    }
+}
+@media screen and (max-width: 1279px) {
+    .d-sidebar {
+        @apply tw-hidden
+    }
+}
+@media screen and (max-width: 1023px) {
+    .grid-cols.tw-grid {
+        @apply tw-flex tw-flex-col-reverse
+    }
+} */
