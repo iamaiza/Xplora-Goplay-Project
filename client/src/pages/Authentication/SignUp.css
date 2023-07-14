@@ -1,15 +1,3 @@
 .signup-page {
     background: linear-gradient(90deg,#58b2f1,#4b5fef 36%,#b452fd);
 }
-
-@media screen and (max-width:600px) {
-    .signup-text-container.px-16 {
-        @apply px-5
-    }
-    .signup-text-container.mt-24 {
-        @apply mt-16
-    }
-    .signup-text.text-6xl {
-        @apply text-3xl max-w-full w-full
-    }
-}
