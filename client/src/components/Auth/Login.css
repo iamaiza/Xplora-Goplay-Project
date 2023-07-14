@@ -1,31 +1,16 @@
-@media screen and (max-width: 980px) {
-    .login-form.flex {
-        @apply flex-col gap-x-0 gap-y-7
-    }
-    .login-form input {
-        @apply w-full
-    }
-
-    .remember-me.mt-20, .form.mt-14 {
-        @apply mt-12
-    }
-    .main-form.pt-32 {
-        @apply pt-20
-    }
-}
 @media screen and (max-width:500px) {
-
-    .login-form-container.mx-10 {
-        @apply mx-3
+    .login-form-container.tw-mx-10 {
+        @apply tw-mx-4
+    }
+    .login-inputs {
+        margin-left: auto;
     }
 
-    .login-form-container span {
-        @apply px-3 py-3 text-base
+    .login-form-container form button {
+        margin-left: 0;
     }
-    .span-container.mt-10 {
-        @apply mt-6
-    }
-    .login-btn.mt-12 {
-        @apply mt-5
+
+    .span-container span.tw-px-5 {
+        @apply tw-px-[0.9rem] tw-text-[13px]
     }
 }

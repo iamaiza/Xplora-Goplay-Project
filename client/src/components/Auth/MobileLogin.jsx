@@ -10,34 +10,34 @@ const MobileLogin = ({ isVisible }) => {
 
     return (
         <form
-            className={`form mt-14 min-(1025px):mt-20 absolute top-0 w-full transition-all duration-300 ease-in-out ${
-                isVisible ? "left-0" : "-left-full"
+            className={`tw-mt-14 tw-absolute tw-top-0 tw-w-full tw-transition-all tw-duration-300 tw-ease-in-out ${
+                isVisible ? "tw-left-0" : "-tw-left-full"
             }`}
             style={{ visibility: isVisible ? "visible" : "hidden" }}
         >
-            <div className="login-form flex gap-x-8 w-[50rem] max-[1450px]:w-full">
-                <div className="border flex-1 text-xl rounded-3xl w-full py-4 min-[1025px]:py-4 px-4">
+            <div className="login-inputs tw-flex max-lg:tw-flex-col tw-gap-x-6 max-lg:tw-gap-y-6 tw-mr-7 max-lg:tw-mr-1.5 max-sm:tw-mr-0">
+                <div className="tw-border tw-w-full tw-text-base tw-rounded-2xl tw-py-2.5 tw-px-4">
                     <PhoneInput
                         country={'us'}
                         value={phoneNumber}
                         onChange={value => setPhoneNumber(value)}
-                        inputStyle={{ border: 0 }}
+                        inputStyle={{ border: 0, width: "100%" }}
                     />
                 </div>
 
-                <div className="border flex-1 text-xl rounded-3xl w-full py-4 min-[1025px]:py-5 px-4">
+                <div className="tw-border tw-w-full tw-text-base tw-rounded-2xl tw-py-4 tw-px-3">
                     <input
                         type="password"
                         placeholder="Password"
-                        className="focus:outline-0 w-full"
+                        className="tw-focus:tw-outline-0 tw-w-full"
                     />
                 </div>
             </div>
-            <div className="remember-me mt-16 flex items-center gap-x-3">
-                <input type="checkbox" className="w-5 h-5" />
-                <span className="text-xl">Remember me</span>
+            <div className="remember-me tw-mt-14 tw-flex tw-items-center tw-gap-x-2">
+                <input type="checkbox" className="tw-w-4 tw-h-4" />
+                <span className="tw-text-base tw-text-gray-400">Remember me</span>
             </div>
-            <button className="mt-12 py-6 px-2 max-w-[22rem] w-full login-btn text-white text-xl rounded-3xl">
+            <button className="btn-bg tw-mt-9 tw-py-4 tw-px-2 tw-max-w-[17rem] -tw-ml-4 tw-w-full btn-bg tw-text-white tw-text-base tw-rounded-[1.3rem]">
                 Login
             </button>
         </form>

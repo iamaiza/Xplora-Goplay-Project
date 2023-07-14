@@ -3,20 +3,20 @@ import "./Login.css"
 
 const EmailLogin = ({ isVisible }) => {
     return (
-        <form className={`form mt-14 min-(1025px):mt-20 absolute top-0 w-full transition-all duration-300 ease-in-out ${isVisible ? "right-0" : "-right-full"}`} style={{ visibility: isVisible ? "visible" : "hidden" }}>
-            <div className="login-form flex gap-x-8 w-[50rem] max-[1450px]:w-full">
-                <div className=" border text-xl rounded-3xl w-full py-4 min-[1025px]:py-5 px-4">
-                    <input type="text" placeholder="Email Address" className="w-full focus:outline-none" />
+        <form className={`tw-mt-14  tw-absolute tw-top-0 tw-w-full tw-transition-all tw-duration-300 tw-ease-in-out ${isVisible ? "tw-right-0" : "-tw-right-full"}`} style={{ visibility: isVisible ? "visible" : "hidden" }}>
+            <div className="login-inputs tw-flex max-lg:tw-flex-col max-lg:tw-gap-y-6 tw-gap-x-8 tw-mr-7 max-lg:tw-mr-1.5 max-sm:tw-mr-0">
+                <div className="tw-border tw-text-base tw-rounded-2xl tw-w-full tw-py-4 tw-px-4">
+                    <input type="text" placeholder="Email Address" className="tw-w-full tw-focus:tw-outline-none" />
                 </div>
-                <div className="border text-xl rounded-3xl w-full py-4 min-[1025px]:py-5 px-4">
-                    <input type="text" placeholder="Password" className="w-full focus:outline-none" />
+                <div className="tw-border tw-text-base tw-rounded-2xl tw-w-full tw-py-4 tw-px-4">
+                    <input type="text" placeholder="Password" className="tw-w-full tw-focus:tw-outline-none" />
                 </div>
             </div>
-            <div className="remember-me mt-16 flex items-center gap-x-3">
-                <input type="checkbox" className="w-5 h-5" />
-                <span className="text-xl">Remember me</span>
+            <div className="remember-me tw-mt-14 tw-flex tw-items-center tw-gap-x-3">
+                <input type="checkbox" className="tw-w-4 tw-h-4" />
+                <span className="tw-text-base tw-text-gray-400">Remember me</span>
             </div>
-            <button className="mt-12 py-6 px-2 max-w-[22rem] w-full login-btn text-white text-xl rounded-3xl">
+            <button className="tw-mt-9 -tw-ml-4 tw-py-4 tw-px-2 tw-max-w-[17rem] tw-w-full btn-bg tw-text-white tw-text-base tw-rounded-[1.3rem]">
                 Login
             </button>
         </form>
