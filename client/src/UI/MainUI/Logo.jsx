@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Logo = () => {
+const Logo = ({ classname, logosize }) => {
     return (
-        <div className="flex items-center gap-2 sm:gap-4">
+        <div className="tw-flex tw-items-center tw-gap-x-2 sm:tw-gap-x-4">
             <Link
                 to="/"
-                className="w-10 h-10 sm:w-14 sm:h-14 rounded-sm overflow-hidden"
+                className={`tw-rounded-sm tw-overflow-hidden ${logosize}`}
             >
                 <img
-                    className="w-full h-full object-cover"
+                    className="tw-w-full tw-h-full tw-object-cover"
                     src="https://goplay.myxplora.com/_nuxt/img/xplora-logo.98b33b7.png"
                     alt=""
                 />
             </Link>
-            <h1 className="text-2xl sm:text-4xl text-white">Xplora</h1>
+            <h1 className={`tw-text-xl sm:tw-text-3xl tw-text-white ${classname}`}>Xplora</h1>
         </div>
     );
 };
