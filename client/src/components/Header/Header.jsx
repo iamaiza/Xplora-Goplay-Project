@@ -17,6 +17,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-// tw-w-10 tw-h-10 sm:tw-w-14 sm:tw-h-14
