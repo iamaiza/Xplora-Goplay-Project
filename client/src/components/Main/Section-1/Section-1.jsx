@@ -4,12 +4,11 @@ import Adventures from "./Adventures";
 
 const Section1 = () => {
 
-    const sectionMargin = 'max-[1285px]:tw-mt-20 max-xl:tw-mt-10 max-lg:tw-mt-6 max-[500px]:tw-mt-5 max-[385px]:tw-mt-[5.5rem] max-[361px]:tw-mt-5 max-[639px]:tw-mt-[100%] max-[550px]:tw-mt-[23rem]'
-    const smallBoxQueries = "max-lg:tw-w-40 max-sm:tw-w-[11rem] max-sm:tw-h-24"
-    const bigBoxQueries = "max-lg:tw-w-48 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem]"
+    const smallBoxQueries = "max-lg:tw-w-44 max-sm:tw-w-[11rem] max-sm:tw-h-24"
+    const bigBoxQueries = "max-lg:tw-w-52 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem]"
     return (
-        <section className={`tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-36 ${sectionMargin}`}>
-            <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-lg:tw-px-0 max-sm:tw-px-2 max-sm:tw-text-center">
+        <section className="tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-16 max-xl:tw-mt-8 max-sm:tw-mt-7">
+            <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-[900px]:tw-px-2 max-sm:tw-px-2 max-sm:tw-text-center">
                 <div className="tw-flex grid-item-1">
                     <div>
                         <div className={`box tw-text-left tw-w-44 tw-p-5 tw-rounded-2xl tw-mb-4 ${smallBoxQueries}`}>
