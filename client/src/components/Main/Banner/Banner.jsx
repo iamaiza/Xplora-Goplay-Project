@@ -3,11 +3,11 @@ import "./Banner.css";
 
 const Banner = () => {
     const bannerContentQueries =
-        "max-xl:tw-pt-28 max-lg:tw-pl-4 max-lg:tw-pt-36 max-[900px]:tw-pt-28 max-sm:tw-pt-36 max-sm:tw-text-center max-sm:tw-px-4";
+        "max-xl:tw-pt-11 max-lg:tw-pl-4 max-lg:tw-pt-14 max-sm:tw-pt-24 max-sm:tw-text-center max-sm:tw-px-4";
     const headingQueries =
         "max-lg:tw-text-[1.7rem] max-sm:tw-text-[1.55rem] max-sm:tw-w-full";
     return (
-        <section className="banner-section tw-max-h-screen tw-h-full max-[500px]:tw-h-[97vh] max-[385px]:tw-h-full max-[361px]:tw-h-[94vh] tw-mt-[4.9rem] max-lg:tw-mt-[3.4rem] max-sm:tw-mt-0 ">
+        <section className="banner-section tw-h-full tw-mt-[4.9rem] max-lg:tw-mt-[3.4rem] max-sm:tw-mt-12 max-sm:tw-pt-2 tw-relative">
             <img
                 className="tw-w-full tw-h-full tw-object-cover max-sm:tw-hidden"
                 src="https://goplay.myxplora.com/_nuxt/img/banner-bg.94b0586.webp"
@@ -19,7 +19,7 @@ const Banner = () => {
                 alt=""
             />
             <div
-                className={`tw-text-white tw-w-full tw-h-full tw-pl-16 banner-content tw-absolute tw-top-0 tw-pt-56 ${bannerContentQueries}`}
+                className={`tw-text-white tw-w-full tw-h-full tw-pl-16 tw-absolute tw-top-0 tw-pt-36 ${bannerContentQueries}`}
             >
                 <h1
                     className={`tw-text-5xl tw-w-[56%] ${headingQueries}`}
@@ -34,7 +34,7 @@ const Banner = () => {
                     On average Xplora-kids walk over 2500 more steps than others
                     each day. It's made for kids and loved by parents!
                 </p>
-                <p className="tw-text-3xl tw-my-9 text-font max-lg:tw-text-xl max-lg:tw-mb-4 max-lg:tw-mt-8 max-sm:tw-my-9">
+                <p className="tw-text-3xl tw-my-9 max-sm:tw-mb-7 text-font max-lg:tw-text-xl max-lg:tw-mb-4 max-lg:tw-mt-8 max-sm:tw-my-9">
                     Move. Learn. Play.
                 </p>
                 <button className="tw-bg-[#5AB55E] tw-text-base tw-border-[#5AB55E] tw-py-2.5 sm:tw-py-2.5 tw-px-9 tw-rounded-full btn-shadow tw-cursor-pointer">
