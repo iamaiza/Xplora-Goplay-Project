@@ -34,7 +34,7 @@ const Section1 = () => {
                             </div>
                     </div>
                 </div>
-                <div className="tw-w-full grid-item-2 tw-px-12 max-xl:tw-px-0">
+                <div className="tw-w-full grid-item-2 tw-px-14 max-xl:tw-px-2">
                     <h2 className="tw-text-5xl max-lg:tw-text-3xl max-sm:tw-text-2xl tw-mb-7">Set your kids in motion</h2>
                     <p className="tw-text-base">
                         Xplora rewards activity and inspires kids to get out of
