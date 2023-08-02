@@ -4,9 +4,22 @@ import React, { useState } from "react";
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
 import "./Login.css";
+import { useNavigate } from "react-router-dom"
 
 const MobileLogin = ({ isVisible }) => {
     const [phoneNumber, setPhoneNumber] = useState("");
+    const [password, setPassword] = useState("")
+
+    const navigate = useNavigate()
+
+    const handleFormSubmission = e => {
+        e.preventDefault()
+        
+        if(phoneNumber !== '' || password !== '') {
+            localStorage.setItem('mobileLogin', JSON.stringify({ phoneNumber, password }))
+            navigate('/welcome')
+        }
+    }
 
     return (
         <form
@@ -14,6 +27,7 @@ const MobileLogin = ({ isVisible }) => {
                 isVisible ? "tw-left-0" : "-tw-left-full"
             }`}
             style={{ visibility: isVisible ? "visible" : "hidden" }}
+            onSubmit={handleFormSubmission}
         >
             <div className="login-inputs tw-flex max-lg:tw-flex-col tw-gap-x-6 max-lg:tw-gap-y-6 tw-mr-7 max-lg:tw-mr-1.5 max-sm:tw-mr-0">
                 <div className="tw-border tw-w-full tw-text-base tw-rounded-2xl tw-py-2.5 tw-px-4">
@@ -28,8 +42,10 @@ const MobileLogin = ({ isVisible }) => {
                 <div className="tw-border tw-w-full tw-text-base tw-rounded-2xl tw-py-4 tw-px-3">
                     <input
                         type="password"
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
                         placeholder="Password"
-                        className="tw-focus:tw-outline-0 tw-w-full"
+                        className="tw-outline-none tw-w-full"
                     />
                 </div>
             </div>
