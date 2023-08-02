@@ -5,7 +5,14 @@ export { default as Welcome } from "./pages/MainPages/WelcomePage"
 export { default as Dashboard } from "./pages/Dashboard/Dashboard"
 export { default as Adventures } from "./pages/Adventures/Adventures"
 export { default as MarketplacePage } from "./pages/Marketplace/MarketplacePage"
-export { default as AuctionPage } from "./pages/MarketplaceList/AuctionPage"
-export { default as ArcadePage } from "./pages/MarketplaceList/ArcadePage"
-export { default as WatchFacePage } from './pages/MarketplaceList/WatchFacePage'
+export { default as AuctionPage } from "./pages/MarketplaceList/Auction/AuctionPage"
+export { default as ArcadePage } from "./pages/MarketplaceList/Arcade/ArcadePage"
+export { default as WatchFacePage } from './pages/MarketplaceList/WatchFaces/WatchFacePage'
 export { default as WatchRingtonesPage } from './pages/MarketplaceList/WatchRingtonesPage'
+export { default as DashboardUserStats } from './pages/Dashboard/DashboardUserStats'
+export { default as JoinedAdventure } from './pages/Dashboard/JoinedAdventure'
+export { default as AuctionHistory } from './pages/Dashboard/AuctionHistory'
+export { default as AdventureDetails } from './pages/Adventures/AdventureDetails'
+export { default as AuctionDetail } from './pages/MarketplaceList/Auction/AuctionDetail'
+export { default as ArcadeDetail } from "./pages/MarketplaceList/Arcade/ArcadeDetail"
+export { default as WatchFacesDetail } from "./pages/MarketplaceList/WatchFaces/WatchFacesDetail"

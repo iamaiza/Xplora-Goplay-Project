@@ -4,19 +4,19 @@ import Adventures from "./Adventures";
 
 const Section1 = () => {
 
-    const smallBoxQueries = "max-lg:tw-w-44 max-sm:tw-w-[11rem] max-sm:tw-h-24"
-    const bigBoxQueries = "max-lg:tw-w-52 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem]"
+    const smallBoxQueries = "max-lg:tw-w-[10.5rem] max-sm:tw-w-[11rem] max-sm:tw-h-24 max-[500px]:tw-h-20 max-lg:tw-px-4 max-[500px]:tw-py-3 max-[500px]:tw-w-[10.5rem]"
+    const bigBoxQueries = "max-lg:tw-w-52 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem] max-lg:tw-justify-start max-lg:tw-px-6"
     return (
-        <section className="tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-16 max-xl:tw-mt-8 max-sm:tw-mt-7">
-            <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-[900px]:tw-px-2 max-sm:tw-px-2 max-sm:tw-text-center">
-                <div className="tw-flex grid-item-1">
+        <section className="tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-16 max-xl:tw-mt-8 max-lg:tw-mt-7">
+            <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-lg:tw-px-4 max-[900px]:tw-px-2 max-sm:tw-px-1 max-sm:tw-text-center">
+                <div className="tw-flex box-container tw-overflow-x-hidden">
                     <div>
                         <div className={`box tw-text-left tw-w-44 tw-p-5 tw-rounded-2xl tw-mb-4 ${smallBoxQueries}`}>
-                            <h2 className="tw-text-[1.7rem] max-lg:tw-text-2xl max-sm:tw-text-xl">745k+</h2>
-                            <p className="tw-text-base max-lg:tw-text-[0.95rem] tw-mt-1 max-sm:tw-text-sm  max-sm:tw-mt-0">Registered users</p>
+                            <h2 className="tw-text-[1.7rem] max-sm:tw-text-xl">745k+</h2>
+                            <p className="tw-text-base max-lg:tw-text-[0.95rem] tw-mt-1 max-sm:tw-text-sm max-sm:tw-mt-0">Registered users</p>
                         </div>
                         <div className={`box tw-text-left tw-w-44 tw-p-5 tw-rounded-2xl ${smallBoxQueries}`}>
-                            <h2 className="tw-text-[1.7rem] max-lg:tw-text-2xl max-sm:tw-text-xl">100 billion</h2>
+                            <h2 className="tw-text-[1.7rem]  max-sm:tw-text-xl">100 billion</h2>
                             <p className="tw-text-base tw-mt-1 max-sm:tw-text-sm max-sm:tw-mt-0">Steps per month</p>
                         </div>
                     </div>
