@@ -2,10 +2,12 @@ import React, { useContext, useState } from "react";
 import { Modal, ModalBody, ModalHeader } from "react-bootstrap";
 import { LogoutIcon } from "../../icons/DashboardHeaderIcons";
 import { CloseIcon } from "../../icons/DashboardBodyIcons"
+import { useNavigate } from "react-router-dom";
 
 
 const LogoutModal = () => {
     const [show, setShow] = useState(false)
+    const navigate = useNavigate()
 
     return (
         <>
@@ -21,7 +23,7 @@ const LogoutModal = () => {
                     </div>
                     <h1 className="tw-text-center tw-mt-7 tw-text-2xl">Would you like to log out?</h1>
                     <div className="tw-flex tw-items-center tw-justify-center max-lg:tw-flex-col tw-mt-14 max-sm:tw-mt-8 tw-px-16 max-lg:tw-px-0 tw-gap-x-9 max-lg:tw-gap-y-3">
-                        <button className="btn-bg tw-border tw-flex-1 tw-py-[1.2rem] tw-text-sm tw-px-2 tw-text-white tw-rounded-3xl max-lg:tw-w-full">Logout</button>
+                        <button className="btn-bg tw-border tw-flex-1 tw-py-[1.2rem] tw-text-sm tw-px-2 tw-text-white tw-rounded-3xl max-lg:tw-w-full" onClick={() => navigate('/')}>Logout</button>
                         <button className="tw-border tw-border-black tw-flex-1 tw-py-[1.2rem] tw-text-sm tw-px-2 tw-rounded-3xl max-lg:tw-w-full" onClick={()=> setShow()}>Cancel</button>
                     </div>
                 </ModalBody>

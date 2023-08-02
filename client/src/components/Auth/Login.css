@@ -11,6 +11,6 @@
     }
 
     .span-container span.tw-px-5 {
-        @apply tw-px-[0.9rem] tw-text-[13px]
+        @apply tw-px-[0.9rem] tw-text-[13px] tw-py-2.5
     }
 }

@@ -9,8 +9,3 @@
 .active {
     @apply tw-bg-[#e5310e] tw-text-white
 }
-/* @media screen and (max-width:500px) {
-    .left-side-items {
-        padding-bottom: 1rem;
-    }
-} */
