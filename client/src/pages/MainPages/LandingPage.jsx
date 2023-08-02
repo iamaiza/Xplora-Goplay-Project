@@ -8,7 +8,7 @@ import {
     Section4,
     Section5,
     Footer,
-} from "./imports";
+} from "../imports";
 
 const LandingPage = () => {
     return (

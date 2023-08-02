@@ -1,100 +1,28 @@
 import React from "react";
-import "./Section-2.css"
+import "./Section-2.css";
+import { images } from "./Images";
+import { Row, Col } from "react-bootstrap";
 
 const SectionImages = () => {
     return (
-        <div className="tw-flex tw-items-center tw-justify-center tw-gap-5 tw-flex-wrap md:tw-flex-nowrap tw-py-3 tw-px-2">
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/smartwatches.e64d29d.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Watch Faces</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/music.a1367c8.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Ringtones</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/campaign.9653aba.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Adventures</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/books.a28146b.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">eBooks</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/games.dcd1623.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Games</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/golearn.3cbaaf7.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">eLearning</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/auction.6a79c33.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Auction</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/prizes.6fafa8b.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Prizes</figcaption>
-            </div>
-            <div className="w-div">
-                <figure>
-                    <img
-                        className="tw-w-full tw-h-full tw-object-cover"
-                        src="https://goplay.myxplora.com/_nuxt/img/coins.40a838b.png"
-                        alt=""
-                    />
-                </figure>
-                <figcaption className="tw-text-center tw-text-base">Coins</figcaption>
-            </div>
-        </div>
+        <Row className="tw-py-3 tw-w-full tw-gap-x-2 tw-gap-y-5 max-[800px]:tw-gap-x-4 max-sm:tw-gap-x-0 tw-justify-center max-sm:tw-flex-wrap tw-pl-5 tw-pr-2 max-[800px]:tw-pl-10 max-sm:tw-pl-8 max-[385px]:tw-pl-[1.3rem] max-[370px]:tw-pl-[1.2rem] max-[340px]:tw-pl-0 max-[340px]:tw-ml-[0.01rem] max-[380px]:tw-pr-0">
+            {images.map((img) => (
+                <Col className="tw-p-0 max-sm:tw-flex-grow-0 max-sm:tw-shrink-0">
+                    <div className="">
+                        <figure className=" max-lg:tw-w-[4.3rem] max-[370px]:tw-w-[4.2rem] tw-mx-auto">
+                            <img
+                                className="tw-w-full tw-h-full tw-object-contain"
+                                src={img.imgurl}
+                                alt=""
+                            />
+                        </figure>
+                        <figcaption className="max-sm:tw-text-[11px] tw-whitespace-nowrap tw-text-center max-lg:tw-text-[15px]">
+                            {img.caption}
+                        </figcaption>
+                    </div>
+                </Col>
+            ))}
+        </Row>
     );
 };
 

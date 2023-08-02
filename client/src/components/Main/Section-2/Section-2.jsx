@@ -5,7 +5,9 @@ import SectionImages from "./Section-Images";
 const Section2 = () => {
     return (
         <section className="tw-bg-white tw-h-full tw-pb-14 premium-section">
+            <div>
             <SectionImages />
+            </div>
             <div className="tw-mt-12 tw-px-2">
                 <h1 className="tw-font-bold tw-text-center tw-text-6xl tw-leading-none tw-text-[#6149cd]">
                     Move more to play more

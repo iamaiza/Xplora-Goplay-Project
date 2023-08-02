@@ -30,14 +30,14 @@ const Banner = () => {
                 <p className="tw-text-base tw-my-4  max-[550px]:tw-my-4">
                     Motivate and engage your kids!
                 </p>
-                <p className="tw-text-base tw-w-[42%] max-lg:tw-w-[55%] max-sm:tw-w-full max-[550px]:tw-my-4">
+                <p className="tw-text-base tw-w-[42%] max-[1285px]:tw-w-[43%] max-xl:tw-w-[52%] max-lg:tw-w-[55%] max-sm:tw-w-full max-[550px]:tw-my-4">
                     On average Xplora-kids walk over 2500 more steps than others
                     each day. It's made for kids and loved by parents!
                 </p>
-                <p className="tw-text-3xl tw-my-9 max-sm:tw-mb-7 text-font max-lg:tw-text-xl max-lg:tw-mb-4 max-lg:tw-mt-8 max-sm:tw-my-9">
+                <p className="tw-text-[1.7rem] tw-mt-9 tw-mb-6 max-sm:tw-mb-7 text-font max-lg:tw-text-2xl max-sm:tw-text-xl max-lg:tw-mb-6 max-lg:tw-mt-8 max-sm:tw-mt-9">
                     Move. Learn. Play.
                 </p>
-                <button className="tw-bg-[#5AB55E] tw-text-base tw-border-[#5AB55E] tw-py-2.5 sm:tw-py-2.5 tw-px-9 tw-rounded-full btn-shadow tw-cursor-pointer">
+                <button className="tw-bg-[#4caf50] tw-text-base tw-border-[#4caf50] tw-py-2.5 max-sm:tw-py-3 tw-px-8 tw-rounded-full btn-shadow tw-cursor-pointer max-sm:tw-text-sm">
                     Let's Go!
                 </button>
             </div>
