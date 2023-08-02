@@ -1,6 +1,6 @@
 import React from "react";
-import DashboardCard1 from "../../UI/DashboardPageCards/DashboardCard1";
-import DashboardCard2 from "../../UI/DashboardPageCards/DashboardCard2";
+import DashboardCard1 from "../../UI/Dashboard/DashboardCard1";
+import DashboardCard2 from "../../UI/Dashboard/DashboardCard2";
 import Chart from "./ChartComponent";
 import { Col } from "react-bootstrap";
 import "./DashboardGridCol1.css";
@@ -21,6 +21,7 @@ const DashboardGridCol1 = () => {
                         src="https://goplay.myxplora.com/_nuxt/img/library.12f639e.png"
                         text1="Library"
                         text2="0"
+                        pageLink="/dashboard/content-library"
                     />
                     <DashboardCard1
                         className1="px-card tw-flex-1 max-lg:tw-flex-none tw-h-[4.5rem] max-lg:tw-h-full tw-border-r"
@@ -28,6 +29,7 @@ const DashboardGridCol1 = () => {
                         src="https://goplay.myxplora.com/_nuxt/img/wishlist.8039159.png"
                         text1="Wishlist"
                         text2="0"
+                        pageLink="/dashboard/wishlist"
                     />
                     <DashboardCard1
                         className1="px-card card-border max-lg:tw-border-r tw-flex-1 max-lg:tw-flex-none tw-h-[4.5rem] max-lg:tw-h-full"
@@ -35,6 +37,7 @@ const DashboardGridCol1 = () => {
                         src="https://goplay.myxplora.com/_nuxt/img/favourites.0d92a7e.png"
                         text1="Favourites"
                         text2="0"
+                        pageLink='/dashboard/favourites'
                     />
                 </div>
                 <div className="tw-flex tw-pt-3 max-lg:tw-pt-0 tw-gap-x-5 max-lg:tw-gap-x-0">
@@ -44,6 +47,7 @@ const DashboardGridCol1 = () => {
                         src="https://goplay.myxplora.com/_nuxt/img/joinedcampaigns.453c113.png"
                         text1="Adventures Joined"
                         text2="1"
+                        pageLink='/dashboard/joined-campaigns'
                     />
                     <DashboardCard1
                         className1="px-card tw-flex-1 max-lg:tw-flex-none tw-h-[5.5rem] max-lg:tw-h-full"
@@ -51,6 +55,7 @@ const DashboardGridCol1 = () => {
                         src="https://goplay.myxplora.com/_nuxt/img/auctionhistory.cbc3513.png"
                         text1="Auction History"
                         text2="3"
+                        pageLink='/dashboard/auction-history'
                     />
                 </div>
             </div>
@@ -98,11 +103,13 @@ const DashboardGridCol1 = () => {
                     cardHeading="Set your kids in motion"
                     cardText="Each&nbsp;day, our users walk more than one billion steps. That's the equivalent of walking around the world once!"
                     cardText2="*Average statistics as of September 2022."
+                    pageLink='/campaigns'
                 />
                 <DashboardCard2
                     className1="grid-card-2"
                     cardHeading="Explore with our awesome monthly adventures!"
                     cardText="Earn Xplora coins in tons of different, funny, exciting and educational adventures just by walking!"
+                    pageLink='/campaigns'
                 />
             </div>
 
@@ -111,11 +118,13 @@ const DashboardGridCol1 = () => {
                     className1="grid-card-3"
                     cardHeading="Spend your well earned coins in our massive Marketplace!"
                     cardText="The more steps, the more Xplora coins will fill up your wallet. The coins can be used to play the coolest and best games in the Arcade, get exclusive ringtones and watch faces, and to buy awesome items in the auction!"
+                    pageLink='/marketplace'
                 />
                 <DashboardCard2
                     className1="grid-card-4 card2"
                     cardHeading="Watch faces and ringtones"
                     cardText="Now available with X6Play and X6Pro"
+                    pageLink='/watch-faces'
                 />
             </div>
         </Col>
