@@ -12,10 +12,9 @@ import {
 } from "../../icons/DashboardSidebarIcons";
 import "./DashboardSidebar.css";
 
-const DashboardSidebar = ({ className, position, hideClass }) => {
+const DashboardSidebar = ({ className, position }) => {
     const location = useLocation();
     const currentPath = location.pathname;
-    console.log(currentPath);
     const getActiveLink = (pathname) => {
         if (pathname === "/dashboard") {
             return "/dashboard";
@@ -32,7 +31,7 @@ const DashboardSidebar = ({ className, position, hideClass }) => {
         } else if (pathname === "/watch-ringtones") {
             return "/watch-ringtones";
         } else {
-            return "/dashboard";
+            return `/${pathname && pathname.split("/")[1]}`;
         }
     };
     const [activeLink, setActiveLink] = useState(getActiveLink(currentPath));
@@ -64,7 +63,7 @@ const DashboardSidebar = ({ className, position, hideClass }) => {
 
     return (
         <div
-            className={`tw-pb-5 tw-pt-[5.2rem] max-xl:tw-pt-0 page-links tw-relative tw-basis-[28%] sidebar ${className}`}
+            className={`tw-pb-5 tw-pt-[5.2rem] max-xl:tw-pt-0 page-links tw-relative tw-basis-[28%] ${className}`}
         >
             <div
                 className={`div-border tw-absolute tw-bottom-0 ${position}`}

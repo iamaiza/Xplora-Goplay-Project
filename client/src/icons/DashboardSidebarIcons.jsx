@@ -1,10 +1,11 @@
-const ChevronDownIcon = () => {
+const ChevronDownIcon = ({className}) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2.5}
+            className={className}
         >
             <path
                 strokeLinecap="round"
@@ -30,12 +31,12 @@ const SquaresIcon = () => {
     );
 };
 
-const GraphIcon = () => {
+const GraphIcon = ({className}) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
-            className="base-svg tw-w-[1.4rem]"
+            className={`base-svg ${className ? className : 'tw-w-[1.4rem]'}`}
         >
             <path
                 data-name="Campaigns icon"

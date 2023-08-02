@@ -7,7 +7,7 @@ import {
     DashboardSidebar,
     DashboardGridCol1,
     DashboardGridCol2,
-} from "./imports";
+} from "../imports";
 import { Row } from 'react-bootstrap'
 import "./Dashboard.css";
 

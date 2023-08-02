@@ -54,23 +54,26 @@ const DashboardHeader = () => {
                             <MenuOptionIcon />
                         </div>
 
-                        <div className="tw-w-[12.5rem] tw-absolute tw-top-20 tw-right-3 tw-bg-white tw-text-[#6149cd] tw-rounded tw-py-2.5 tw-hidden logout">
-                            <div className="tw-flex tw-items-center tw-justify-center tw-gap-x-2 tw-bg-gray-200 tw-py-2 tw-px-3">
-                                <figure className="tw-w-9 tw-h-9 tw-p-[0.2rem] tw-border-[1px] tw-border-[#0046bc] tw-rounded-full">
+                        <div className="tw-w-44 tw-absolute tw-top-[4.3rem] max-xl:tw-top-14 max-sm:tw-top-11 tw-right-7 max-sm:tw-right-4 tw-bg-white tw-text-[#6149cd] tw-rounded tw-py-2 tw-hidden logout">
+                            <div className="tw-flex tw-items-center tw-justify-between tw-gap-x-2 tw-bg-gray-200 tw-py-2 tw-px-3">
+                                <div className="tw-flex tw-items-center tw-gap-x-1">
+                                    <figure className="tw-w-8 tw-h-8 tw-p-[0.2rem] tw-border-[1px] tw-border-[#0046bc] tw-rounded-full">
                                     <img
                                         className="tw-w-full tw-h-full tw-object-cover tw-rounded-full"
                                         src="https://api.myxplora.com/file?id=189615070b18e11ea8bdd216546f146d4"
                                         alt=""
                                     />
                                 </figure>
-                                <span className="tw-text-base tw-font-semibold">
-                                    Sameed test
+                                <span className="tw-text-sm tw-font-semibold">
+                                    Sameed
                                 </span>
-                                <div className="tw-ml-2">
+                                </div>
+                                
+                                <div>
                                     <CheckIcon />
                                 </div>
                             </div>
-                            <div className="tw-my-2.5 tw-border"></div>
+                            <div className="tw-mt-2 tw-mb-2.5 tw-border"></div>
                             <LogoutModal />
                         </div>
                     </div>
