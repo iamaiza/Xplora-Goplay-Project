@@ -2,6 +2,7 @@ import React from "react";
 import { ExclaimationIcon } from "../../icons/DashboardBodyIcons";
 import Cards from "../../UI/Marketplace/Cards";
 import { Link } from "react-router-dom";
+import { arcadeList } from "../../pages/Marketplace/Marketplace";
 import Slider from "react-slick";
 
 const ArcadeGames = () => {
@@ -58,23 +59,23 @@ const ArcadeGames = () => {
             <Slider {...settings}>
                 <Cards
                     className="tw-h-72 max-sm:tw-w-72 max-[400px]:tw-w-full"
-                    imgSrc="https://xplora-images.s3.eu-central-1.amazonaws.com/grr.jpg"
-                    title="Giant Rabbit Run"
-                    coins="1"
+                    imgSrc={arcadeList[0].img}
+                    title={arcadeList[0].title}
+                    coins={arcadeList[0].coin}
                     btnText="Play now"
                 />
                 <Cards
                     className="tw-h-72 max-sm:tw-w-72 max-[400px]:tw-w-full"
-                    imgSrc="https://xplora-images.s3.eu-central-1.amazonaws.com/cr.jpg"
-                    title="Curvy Road"
-                    coins="1"
+                    imgSrc={arcadeList[1].img}
+                    title={arcadeList[1].title}
+                    coins={arcadeList[1].coin}
                     btnText="Play now"
                 />
                 <Cards
                     className="tw-h-72 max-sm:tw-w-72 max-[400px]:tw-w-full"
-                    imgSrc="https://xplora-images.s3.eu-central-1.amazonaws.com/lma.jpg"
-                    title="Leave me alone"
-                    coins="1"
+                    imgSrc={arcadeList[2].img}
+                    title={arcadeList[2].title}
+                    coins={arcadeList[2].coin}
                     btnText="Play now"
                 />
                 <div className="slick-slide tw-bg-[#efefef] tw-rounded-2xl tw-w-full tw-h-[506.09px]">

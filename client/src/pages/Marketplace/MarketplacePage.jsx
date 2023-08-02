@@ -1,6 +1,6 @@
 import React from "react";
 import "./MarketplacePage.css";
-import { DashboardHeader, DashboardSidebar, MarketplaceOptions, AuctionProducts, ArcadeGames, WatchFaces, WatchRingtones } from "./imports"
+import { DashboardHeader, DashboardSidebar, MarketplaceOptions, AuctionProducts, ArcadeGames, WatchFaces, WatchRingtones } from "../imports"
 
 const MarketplacePage = () => {
     return (
