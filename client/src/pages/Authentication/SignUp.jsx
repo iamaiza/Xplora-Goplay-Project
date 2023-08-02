@@ -20,8 +20,8 @@ const SignUp = () => {
                     </div>
                 </div>
 
-                <div className="signup-text-container tw-mt-16 max-sm:tw-mt-9 tw-px-16 max-[380px]:tw-px-3 max-[300px]:tw-px-1 max-sm:tw-px-5 tw-text-white">
-                    <h1 className="signup-text tw-text-5xl max-sm:tw-text-2xl max-sm:tw-w-full tw-tracking-wide tw-w-1/2 max-[1285px]:tw-w-[45%] tw-mx-auto tw-text-center tw-leading-tight">Download and sign up to Xplora App to join Xplora</h1>
+                <div className="tw-mt-16 max-sm:tw-mt-9 tw-px-16 max-[380px]:tw-px-3 max-[300px]:tw-px-1 max-sm:tw-px-5 max-[340px]:tw-px-0 tw-text-white">
+                    <h1 className="signup-text tw-text-5xl max-sm:tw-text-2xl max-[340px]:tw-text-[1.46rem] tw-tracking-wide tw-w-1/2 max-[1285px]:tw-w-[45%] max-sm:tw-w-full tw-mx-auto tw-text-center tw-leading-tight">Download and sign up to Xplora App to join Xplora</h1>
 
                     <figure className="tw-mx-auto tw-flex tw-justify-center tw-w-fit tw-mt-14 max-sm:tw-mt-7">
                         <img className="tw-w-[77%] tw-h-full tw-object-cover" src="https://goplay.myxplora.com/_nuxt/img/sign-up-image.32b9ecd.png" alt="" />
