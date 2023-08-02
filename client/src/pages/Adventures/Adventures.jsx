@@ -1,38 +1,39 @@
 import React, { useEffect, useState } from "react";
-import DashboardHeader from "../../UI/MainUI/DashboardHeader";
-import DashboardSidebar from "../../UI/MainUI/DashboardSidebar";
 import { ExclaimationIcon, SortIcon } from "../../icons/DashboardBodyIcons";
-import AdventureList from "../../UI/Adventures/AdventureList";
 import { useCookies } from "react-cookie";
+import { DashboardHeader, DashboardSidebar, AdventureList } from "../imports";
+import { adventures } from "./Adventure";
 
 const Adventures = () => {
-    const defaultImg = "https://goplay.myxplora.com/_nuxt/img/campaign-goldrush-desktop.570c559.png"
-    const responsiveImg = "https://goplay.myxplora.com/_nuxt/img/campaign-banner-img.237ff09.png"
-    const [img, setImg] = useState(defaultImg)
-    const [cookie, setCookie] = useCookies(["adventureImg"])
+    const defaultImg =
+        "https://goplay.myxplora.com/_nuxt/img/campaign-goldrush-desktop.570c559.png";
+    const responsiveImg =
+        "https://goplay.myxplora.com/_nuxt/img/campaign-banner-img.237ff09.png";
+    const [img, setImg] = useState(defaultImg);
+    const [cookie, setCookie] = useCookies(["adventureImg"]);
 
     useEffect(() => {
-        if(cookie.adventureImg) {
-            setImg(cookie.adventureImg)
+        if (cookie.adventureImg) {
+            setImg(cookie.adventureImg);
         }
-        window.addEventListener("resize", changeImageHandler)
+        window.addEventListener("resize", changeImageHandler);
 
         return () => {
-            window.removeEventListener("resize", changeImageHandler)
-        }
-    }, [])
+            window.removeEventListener("resize", changeImageHandler);
+        };
+    }, []);
 
     const changeImageHandler = () => {
-        if(window.innerWidth <= 1024) {
-            const newImage = responsiveImg
-            setCookie("adventureImg", newImage)
-            setImg(responsiveImg)
+        if (window.innerWidth <= 1024) {
+            const newImage = responsiveImg;
+            setCookie("adventureImg", newImage);
+            setImg(responsiveImg);
         } else {
-            const newImage = defaultImg
-            setCookie("adventureImg", newImage)
-            setImg(defaultImg)
+            const newImage = defaultImg;
+            setCookie("adventureImg", newImage);
+            setImg(defaultImg);
         }
-    }
+    };
 
     return (
         <div>
@@ -55,42 +56,39 @@ const Adventures = () => {
                             Welcome to Xplora Adventures
                         </h1>
                         <figure>
-                            <img
-                                src={img}
-                                alt=""
-                            />
+                            <img src={img} alt="" />
                         </figure>
                     </div>
                     <div className="tw-flex tw-justify-between tw-items-center tw-gap-3 tw-mt-11">
                         <div className="tw-flex tw-items-center tw-gap-x-4 max-sm:tw-gap-x-2">
-                            <h1 className="tw-text-4xl max-sm:tw-text-xl">All Adventures</h1>
+                            <h1 className="tw-text-4xl max-sm:tw-text-xl">
+                                All Adventures
+                            </h1>
                             <div className="-tw-mt-1 max-lg:-tw-mt-2 max-sm:tw-mt-0">
-                                <ExclaimationIcon className='tw-w-8 tw-h-8 tw-rotate-180 max-sm:tw-w-5 max-sm:tw-h-5' />
+                                <ExclaimationIcon className="tw-w-8 tw-h-8 tw-rotate-180 max-sm:tw-w-5 max-sm:tw-h-5" />
                             </div>
                         </div>
                         <div className="tw-flex tw-items-center">
                             <div>
                                 <SortIcon />
                             </div>
-                            <p className="tw-text-[1.55rem] max-sm:tw-text-base">Sort</p>
+                            <p className="tw-text-[1.55rem] max-sm:tw-text-base">
+                                Sort
+                            </p>
                         </div>
                     </div>
 
                     <div className="tw-mt-6 max-sm:tw-mt-4">
-                        <AdventureList className="tw-mb-7" imgUrl="https://xplora-images.s3.eu-central-1.amazonaws.com/180543b90fed011edb8dabd9b489f3439.png" title="Africa Expedition" startDate="31/05/2023" endDate="27/06/2023" />
-                        <AdventureList className='tw-mb-7' imgUrl="https://xplora-images.s3.eu-central-1.amazonaws.com/14fce65c0d77711ed858ba1f182701b4b.png" title="Planet Adventure" startDate="26/04/2023" endDate="30/05/2023" />
-                        <div className="tw-relative tw-h-full">
-                            <AdventureList className='tw-mb-7' imgUrl="https://xplora-images.s3.eu-central-1.amazonaws.com/18b074730b2b811ed858ba1f182701b4b.png" title="Walk the wonders of the World" startDate="01/03/2023" endDate="01/04/2023" />
-                            <div className="tw-absolute tw-top-0 tw-left-0 tw-right-0 tw-bottom-0 tw-bg-[rgba(0,0,0,0.5)] tw-rounded-3xl">
-                                <div className="tw-bg-black tw-w-fit tw-mx-auto tw-text-white tw-py-1.5 tw-px-4 tw-rounded-full tw-text-sm">Ended in 01/04/2023</div>
-                            </div>
-                        </div>
-                        <div className="tw-relative tw-h-full">
-                            <AdventureList imgUrl="https://xplora-images.s3.eu-central-1.amazonaws.com/dino_disc_ListTileDesktop.png" title="Dinosaur Discovery" startDate="01/02/2023" endDate="06/03/2023" />
-                            <div className="tw-absolute tw-top-0 tw-left-0 tw-right-0 tw-bottom-0 tw-bg-[rgba(0,0,0,0.5)] tw-rounded-3xl">
-                                <div className="tw-bg-black tw-w-fit tw-mx-auto tw-text-white tw-py-1.5 tw-px-4 tw-rounded-full tw-text-sm">Ended in 06/03/2023</div>
-                            </div>
-                        </div>
+                        {adventures.map((adventure) => (
+                            <AdventureList
+                                className="tw-mb-7"
+                                title={adventure.title}
+                                imgUrl={adventure.imgUrl}
+                                startDate={adventure.startDate}
+                                endDate={adventure.endDate}
+                                ended={adventure.ended}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
