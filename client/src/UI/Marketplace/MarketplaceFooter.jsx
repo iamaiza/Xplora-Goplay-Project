@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./auction.css"
 
-const MarketplaceFooter = () => {
+const MarketplaceFooter = ({userStats}) => {
     return (
         <div
-            className="tw-mt-20 tw-p-8 max-lg:tw-py-0 max-lg:tw-px-5 max-sm:tw-px-3 tw-mb-1 max-lg:tw-h-[38rem] max-lg:tw-flex max-lg:tw-justify-center max-lg:tw-items-center tw-relative"
+            className={`tw-mt-20 tw-p-8 max-lg:tw-py-0 max-lg:tw-px-5 max-sm:tw-px-3 tw-mb-1 max-lg:tw-h-[38rem] max-lg:tw-flex max-lg:tw-justify-center max-lg:tw-items-center tw-relative ${userStats === true ? 'max-xl:tw-mt-44 max-[900px]:tw-mt-20' : ''}`}
             style={{
                 background:
                     "linear-gradient(90deg,#754bef,#754bef 36%,#5675f4)",
@@ -48,7 +48,7 @@ const MarketplaceFooter = () => {
                         alt=""
                     />
                 </div>
-                <div className="tw-w-14 max-lg:tw-w-24 tw-absolute -tw-top-3 max-lg:-tw-top-7 tw-right-12 max-sm:tw-right-5">
+                <div className="tw-w-14 max-lg:tw-w-24 tw-absolute -tw-top-3 max-lg:-tw-top-8 tw-right-12 max-sm:tw-right-5">
                     <img
                         className="tw-w-full tw-object-cover"
                         src="https://goplay.myxplora.com/_nuxt/img/hat.cd48f9d.png"

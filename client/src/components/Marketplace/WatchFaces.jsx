@@ -3,6 +3,7 @@ import { ExclaimationIcon } from "../../icons/DashboardBodyIcons";
 import { Link } from "react-router-dom";
 import Cards from "../../UI/Marketplace/Cards";
 import Slider from "react-slick";
+import { watchFacesList } from "../../pages/Marketplace/Marketplace";
 
 const WatchFaces = () => {
     const settings = {
@@ -58,30 +59,30 @@ const WatchFaces = () => {
             <Slider {...settings}>
                 <Cards
                     className="tw-h-[17rem] tw-relative max-sm:tw-w-72 max-[400px]:tw-w-full tw-mx-auto"
-                    imgSrc="https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png"
-                    imgSrc2="https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-007.png"
-                    title="Nice Breeze"
-                    coins="30"
+                    imgSrc={watchFacesList[0].img1}
+                    imgSrc2={watchFacesList[0].img2}
+                    title={watchFacesList[0].title}
+                    coins={watchFacesList[0].coin}
                     btnText="Get"
                     tag={true}
                 />
 
                 <Cards
                     className="tw-h-[17rem] tw-relative max-sm:tw-w-72 max-[400px]:tw-w-full tw-mx-auto"
-                    imgSrc="https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png"
-                    imgSrc2="https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-008.png"
-                    title="Sunnyside"
-                    coins="30"
+                    imgSrc={watchFacesList[1].img1}
+                    imgSrc2={watchFacesList[1].img2}
+                    title={watchFacesList[1].title}
+                    coins={watchFacesList[1].coin}
                     btnText="Get"
                     tag={true}
                 />
 
                 <Cards
                     className="tw-h-[17rem] tw-relative max-sm:tw-w-72 max-[400px]:tw-w-full tw-mx-auto"
-                    imgSrc="https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png"
-                    imgSrc2="https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-009.png"
-                    title="Pinky"
-                    coins="30"
+                    imgSrc={watchFacesList[2].img1}
+                    imgSrc2={watchFacesList[2].img2}
+                    title={watchFacesList[2].title}
+                    coins={watchFacesList[2].coin}
                     btnText="Get"
                     tag={true}
                 />
