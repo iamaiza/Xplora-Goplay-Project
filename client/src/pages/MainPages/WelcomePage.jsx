@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./WelcomePage.css"
-import Logo from '../../UI/MainUI/Logo'
+import { Logo } from "../imports"
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const WelcomePage = () => {
+  const location = useLocation()
+  const navigate = useNavigate()
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      navigate('/marketplace')
+    }, 3000)
+
+    return () => clearTimeout(timeout)
+  }, [location])
+
   return (
     <div className='tw-h-screen tw-w-full welcome tw-p-4 tw-overflow-y-auto'>
         <Logo logosize="tw-w-11 tw-h-11" />
