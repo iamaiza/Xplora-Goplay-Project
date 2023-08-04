@@ -65,6 +65,8 @@ const WatchFaces = () => {
                     coins={watchFacesList[0].coin}
                     btnText="Get"
                     tag={true}
+                    pageLink={`/watch-faces/${watchFacesList[0].title.toLowerCase()
+                        .replace(/\s+/g, "-")}`}
                 />
 
                 <Cards
@@ -75,6 +77,8 @@ const WatchFaces = () => {
                     coins={watchFacesList[1].coin}
                     btnText="Get"
                     tag={true}
+                    pageLink={`/watch-faces/${watchFacesList[1].title.toLowerCase()
+                        .replace(/\s+/g, "-")}`}
                 />
 
                 <Cards
@@ -85,6 +89,8 @@ const WatchFaces = () => {
                     coins={watchFacesList[2].coin}
                     btnText="Get"
                     tag={true}
+                    pageLink={`/watch-faces/${watchFacesList[2].title.toLowerCase()
+                        .replace(/\s+/g, "-")}`}
                 />
 
                 <div className="slick-slide tw-bg-[#efefef] tw-rounded-2xl tw-h-[490.09px]">
