@@ -63,6 +63,8 @@ const ArcadeGames = () => {
                     title={arcadeList[0].title}
                     coins={arcadeList[0].coin}
                     btnText="Play now"
+                    pageLink={`/arcade/${arcadeList[0].title.toLowerCase()
+                        .replace(/\s+/g, "_")}`}
                 />
                 <Cards
                     className="tw-h-72 max-sm:tw-w-72 max-[400px]:tw-w-full"
@@ -70,6 +72,8 @@ const ArcadeGames = () => {
                     title={arcadeList[1].title}
                     coins={arcadeList[1].coin}
                     btnText="Play now"
+                    pageLink={`/arcade/${arcadeList[1].title.toLowerCase()
+                        .replace(/\s+/g, "_")}`}
                 />
                 <Cards
                     className="tw-h-72 max-sm:tw-w-72 max-[400px]:tw-w-full"
@@ -77,6 +81,8 @@ const ArcadeGames = () => {
                     title={arcadeList[2].title}
                     coins={arcadeList[2].coin}
                     btnText="Play now"
+                    pageLink={`/arcade/${arcadeList[2].title.toLowerCase()
+                        .replace(/\s+/g, "_")}`}
                 />
                 <div className="slick-slide tw-bg-[#efefef] tw-rounded-2xl tw-w-full tw-h-[506.09px]">
                     <Link to='/arcade' className="tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center">
