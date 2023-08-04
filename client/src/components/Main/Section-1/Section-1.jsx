@@ -5,7 +5,7 @@ import Adventures from "./Adventures";
 const Section1 = () => {
 
     const smallBoxQueries = "max-lg:tw-w-[10.5rem] max-sm:tw-w-[11rem] max-sm:tw-h-24 max-[500px]:tw-h-20 max-lg:tw-px-4 max-[500px]:tw-py-3 max-[500px]:tw-w-[10.5rem]"
-    const bigBoxQueries = "max-lg:tw-w-52 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem] max-lg:tw-justify-start max-lg:tw-px-6"
+    const bigBoxQueries = "max-lg:tw-w-52 max-sm:tw-w-[11rem] max-sm:tw-h-[7rem] max-lg:tw-justify-start max-lg:tw-px-6 max-[380px]:-tw-ml-1 max-[360px]:-tw-ml-2.5 max-[340px]:-tw-ml-10"
     return (
         <section className="tw-overflow-x-hidden tw-w-full tw-text-white tw-mt-16 max-xl:tw-mt-8 max-lg:tw-mt-7">
             <div className="grid-section tw-w-full tw-gap-x-5 tw-px-5 max-lg:tw-px-4 max-[900px]:tw-px-2 max-sm:tw-px-1 max-sm:tw-text-center">
