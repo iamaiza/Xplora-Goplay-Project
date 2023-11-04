@@ -1107,7 +1107,7 @@ const arcadeList = [
 
 const watchFacesList = [
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-007.png",
         title: "Nice Breeze",
         coin: 30,
@@ -1115,7 +1115,7 @@ const watchFacesList = [
         description: 'An artsy background for the creative one!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-008.png",
         title: "Sunnyside",
         coin: 30,
@@ -1123,7 +1123,7 @@ const watchFacesList = [
         description: 'An artsy background for the creative one!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/GO-WF-009.png",
         title: "Pinky",
         coin: 30,
@@ -1131,7 +1131,7 @@ const watchFacesList = [
         description: 'An artsy background for the creative one!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1b76551b01fe011ee83ce55302323b59c.png",
         title: "Green galore",
         coin: 30,
@@ -1139,7 +1139,7 @@ const watchFacesList = [
         description: 'An artsy background for the creative one!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1ba7243901fe011ee83ce55302323b59c.png",
         title: "Cupcake party",
         coin: 30,
@@ -1147,7 +1147,7 @@ const watchFacesList = [
         description: 'Party all day long! You know you love cupcake!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1bc94d5701fe011ee83ce55302323b59c.png",
         title: "Love cake",
         coin: 30,
@@ -1155,7 +1155,7 @@ const watchFacesList = [
         description: 'Party all day long! You know you love cupcake!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1bd7041501fe011ee83ce55302323b59c.png",
         title: "Flower Power",
         coin: 30,
@@ -1163,7 +1163,7 @@ const watchFacesList = [
         description: 'Flower power! It feels like summer!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1d005f2101fe011ee83ce55302323b59c.png",
         title: "Fish shell",
         coin: 30,
@@ -1171,7 +1171,7 @@ const watchFacesList = [
         description: 'The shell of a rainbow-fish!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1d650a9d01fe011ee83ce55302323b59c.png",
         title: "Creative pink",
         coin: 30,
@@ -1179,7 +1179,7 @@ const watchFacesList = [
         description: 'Feeling creative today? Go for this smashing colours!'
     },
     {
-        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame.4cc16e8.png",
+        img1: "https://goplay.myxplora.com/_nuxt/img/watch-frame-x6play.4cc16e8.png",
         img2: "https://xplora-images.s3.eu-central-1.amazonaws.com/watch-face/1de90f0001fe011ee83ce55302323b59c.png",
         title: "Dizzy spiral",
         coin: 30,
